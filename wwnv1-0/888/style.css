@@ -162,10 +162,6 @@
 	font-size: 20px;
 }
 
-.window-items{
-	position: relative;
-}
-
 .window-items:after{
 	display: table;
 	content: "";

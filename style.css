@@ -1,0 +1,1302 @@
+/* Preload */
+
+#load_screen{
+	background-color: rgb(0,0,0);
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+}
+
+#load_screen > #loading{
+	position: absolute;
+	font-size: 40px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.loader {
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* End Preload */
+
+.frame{
+	height: 400px;
+	width: 100%;
+	padding: 16px;
+	position: relative;
+}
+
+.subheader{
+	color: white;
+	text-align: center;
+}
+
+/* Hover Text 3D */
+
+@media (max-width: 600px){
+	h1.hover-text-3d2-1,
+	h1.hover-text-3d2,
+	h1.hover-text-3d{
+		font-size: 3em;
+	}	
+}
+
+.hover-text-3d{
+	font-size: 7em;
+}
+
+.hover-text-3d{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+}
+
+.hover-text-3d:before{
+	content: attr(data-text);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d:hover:before{
+	width: 100%;
+}
+
+/* End Hover Text 3D */
+
+/* Hover Text 3D2 */
+
+.hover-text-3d2{
+	font-size: 7em;
+}
+
+.hover-text-3d2{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+}
+
+.hover-text-3d2:before{
+	content: attr(data-text);
+	position: absolute;
+	
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d2:hover:before{
+	width: 100%;
+}
+
+.hover-text-3d2:after{
+	content: attr(data-text);
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	-webkit-text-fill-color: seagreen;
+	text-fill-color: seagreen;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: seagreen;
+	text-stroke-color: seagreen;
+	height: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d2:hover:after{
+	height: 100%;
+}
+
+/* 3D2-1 */
+
+.hover-text-3d2-1{
+	font-size: 7em;
+}
+
+.hover-text-3d2-1{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+}
+
+.hover-text-3d2-1:before{
+	content: attr(data-text);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d2-1:hover:before{
+	width: 100%;
+}
+
+.hover-text-3d2-1:after{
+	content: attr(data-text);
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-text-fill-color: seagreen;
+	text-fill-color: seagreen;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: seagreen;
+	text-stroke-color: seagreen;
+	height: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d2-1:hover:after{
+	height: 100%;
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	transition-delay: 1s;
+}
+
+/* Hover text 3D2 Half */
+
+.hover-text-3d2-half{
+	font-size: 7em;
+}
+
+.hover-text-3d2-half{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+}
+
+.hover-text-3d2-half:before{
+	content: attr(data-text);
+	position: absolute;
+	
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d2-half:hover:before{
+	width: 100%;
+}
+
+.hover-text-3d2-half:after{
+	content: attr(data-text);
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-text-fill-color: seagreen;
+	text-fill-color: seagreen;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: seagreen;
+	text-stroke-color: seagreen;
+	height: 0%;
+	height: 65%
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d2-half:hover:after{
+	height: 65%;
+}
+
+/* End Hover text 3D2 half */
+
+/* End Hover Text 3D2 */
+
+
+/* Hover Text 3D Scale */
+
+.hover-text-3d-scale{
+	font-size: 7em;
+}
+
+.hover-text-3d-scale{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+.hover-text-3d-scale:before{
+	content: attr(data-text);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d-scale:hover:before{
+	width: 100%;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* End Hover Text 3D Scale */
+
+
+/* Hover Text 3d2 Scale */
+
+.hover-text-3d2-scale{
+	font-size: 7em;
+}
+
+.hover-text-3d2-scale{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	z-index: 2;
+}
+
+.hover-text-3d2-scale:before{
+	content: attr(data-text);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	z-index: 3;
+}
+
+.hover-text-3d2-scale:after{
+	content: attr(data-text);
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-text-fill-color: teal;
+	text-fill-color: teal;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: teal;
+	text-stroke-color: teal;
+	height: 0%;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	z-index: 1;
+}
+
+.hover-text-3d2-scale:hover:before{
+	width: 100%;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.hover-text-3d2-scale:hover:after{
+	height: 100%;
+}
+
+/* End Hover Text 3d2 Scale */
+
+/* Hover Text 3D Mirror */
+
+.hover-text-3d-mirror{
+	font-size: 7em;
+}
+
+.hover-text-3d-mirror{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+.hover-text-3d-mirror:before{
+	content: attr(data-text);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-webkit-transform: rotate(180deg) translateY(-100%);
+	-ms-transform: rotate(180deg) translateY(-100%);
+	-o-transform: rotate(180deg) translateY(-100%);
+	transform: rotate(180deg) translateY(-100%);
+	direction:rtl;
+	unicode-bidi:bidi-override;
+}
+
+.hover-text-3d-mirror:hover:before{
+	width: 100%;
+	-webkit-transform: rotate(180deg) translateY(-100%);
+	-ms-transform: rotate(180deg) translateY(-100%);
+	-o-transform: rotate(180deg) translateY(-100%);
+	transform: rotate(180deg) translateY(-100%);
+}
+
+/* End Hover Text 3D Mirror */
+
+/* Hover Text 3d2 Mirror */
+
+.hover-text-3d2-mirror{
+	font-size: 7em;
+}
+
+.hover-text-3d2-mirror{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+.hover-text-3d2-mirror:before{
+	content: attr(data-text);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-webkit-transform: rotate(180deg) translateY(-100%);
+	-ms-transform: rotate(180deg) translateY(-100%);
+	-o-transform: rotate(180deg) translateY(-100%);
+	transform: rotate(180deg) translateY(-100%);
+	direction:rtl;
+	unicode-bidi:bidi-override;
+}
+
+.hover-text-3d2-mirror:after{
+	content: attr(data-text);
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d2-mirror:hover:before{
+	width: 100%;
+	-webkit-transform: rotate(180deg) translateY(-100%);
+	-ms-transform: rotate(180deg) translateY(-100%);
+	-o-transform: rotate(180deg) translateY(-100%);
+	transform: rotate(180deg) translateY(-100%);
+}
+
+.hover-text-3d2-mirror:hover:after{
+	width: 100%;
+}
+
+/* End Hover Text 3d2 Mirror */
+
+
+
+/* Hover Text 3D Half */
+
+.hover-text-3d-half{
+	font-size: 7em;
+}
+
+.hover-text-3d-half{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+.hover-text-3d-half:before{
+	content: attr(data-text);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	height: 65%;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d-half:hover:before{
+	width: 100%;
+	height: 65%;
+}
+
+/* End Hover Text 3D Half */
+
+/* Hover text 3D Part */
+
+.hover-text-3d-part{
+	font-size: 7em;
+	text-align: center;
+}
+
+.part9,
+.part8,
+.part7,
+.part6,
+.part5,
+.part4,
+.part3,
+.part2,
+.part1{
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	position: relative;
+}
+
+.part1:before{
+	content: attr(data-text-1);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part2:before{
+	content: attr(data-text-2);
+	position: absolute;
+	-webkit-text-fill-color: crimson;
+	text-fill-color: crimson;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: crimson;
+	text-stroke-color: crimson;
+	width: 0%;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part3:before{
+	content: attr(data-text-3);
+	position: absolute;
+	-webkit-text-fill-color: gold;
+	text-fill-color: gold;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: gold;
+	text-stroke-color: gold;
+	width: 0%;
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part4:before{
+	content: attr(data-text-4);
+	position: absolute;
+	-webkit-text-fill-color: seagreen;
+	text-fill-color: seagreen;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: seagreen;
+	text-stroke-color: seagreen;
+	width: 0%;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
+	transition: 0.8s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part5:before{
+	content: attr(data-text-5);
+	position: absolute;
+	-webkit-text-fill-color: #00CCCC;
+	text-fill-color: #00CCCC;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #00CCCC;
+	text-stroke-color: #00CCCC;
+	width: 0%;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part6:before{
+	content: attr(data-text-6);
+	position: absolute;
+	-webkit-text-fill-color: #6F2DA8;
+	text-fill-color: #6F2DA8;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #6F2DA8;
+	text-stroke-color: #6F2DA8;
+	width: 0%;
+	-webkit-transition: 1.2s;
+	-o-transition: 1.2s;
+	transition: 1.2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part7:before{
+	content: attr(data-text-7);
+	position: absolute;
+	-webkit-text-fill-color: #DA2647;
+	text-fill-color: #DA2647;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #DA2647;
+	text-stroke-color: #DA2647;
+	width: 0%;
+	-webkit-transition: 1.4s;
+	-o-transition: 1.4s;
+	transition: 1.4s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part8:before{
+	content: attr(data-text-8);
+	position: absolute;
+	-webkit-text-fill-color: #FC74FD;
+	text-fill-color: #FC74FD;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #FC74FD;
+	text-stroke-color: #FC74FD;
+	width: 0%;
+	-webkit-transition: 1.6s;
+	-o-transition: 1.6s;
+	transition: 1.6s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part9:before{
+	content: attr(data-text-9);
+	position: absolute;
+	-webkit-text-fill-color: #44D7A8;
+	text-fill-color: #44D7A8;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #44D7A8;
+	text-stroke-color: #44D7A8;
+	width: 0%;
+	-webkit-transition: 1.8s;
+	-o-transition: 1.8s;
+	transition: 1.8s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d-part:hover .part1:before{
+	width: 100%;
+}
+.hover-text-3d-part:hover .part2:before{
+	width: 100%;
+}
+.hover-text-3d-part:hover .part3:before{
+	width: 100%;
+}
+.hover-text-3d-part:hover .part4:before{
+	width: 100%;
+}
+.hover-text-3d-part:hover .part5:before{
+	width: 100%;
+}
+.hover-text-3d-part:hover .part6:before{
+	width: 100%;
+}
+.hover-text-3d-part:hover .part7:before{
+	width: 100%;
+}
+.hover-text-3d-part:hover .part8:before{
+	width: 100%;
+}
+.hover-text-3d-part:hover .part9:before{
+	width: 100%;
+}
+
+/* Hover 3d2 part */
+
+.hover-text-3d2-part{
+	font-size: 7em;
+	text-align: center;
+}
+
+.part2-9,
+.part2-8,
+.part2-7,
+.part2-6,
+.part2-5,
+.part2-4,
+.part2-3,
+.part2-2,
+.part2-1{
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	position: relative;
+}
+
+.part2-1:before{
+	content: attr(data-text-1);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	height: 0%;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part2-2:before{
+	content: attr(data-text-2);
+	position: absolute;
+	-webkit-text-fill-color: crimson;
+	text-fill-color: crimson;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: crimson;
+	text-stroke-color: crimson;
+	height: 0%;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part2-3:before{
+	content: attr(data-text-3);
+	position: absolute;
+	-webkit-text-fill-color: gold;
+	text-fill-color: gold;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: gold;
+	text-stroke-color: gold;
+	height: 0%;
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part2-4:before{
+	content: attr(data-text-4);
+	position: absolute;
+	-webkit-text-fill-color: seagreen;
+	text-fill-color: seagreen;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: seagreen;
+	text-stroke-color: seagreen;
+	height: 0%;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
+	transition: 0.8s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part2-5:before{
+	content: attr(data-text-5);
+	position: absolute;
+	-webkit-text-fill-color: #00CCCC;
+	text-fill-color: #00CCCC;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #00CCCC;
+	text-stroke-color: #00CCCC;
+	height: 0%;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part2-6:before{
+	content: attr(data-text-6);
+	position: absolute;
+	-webkit-text-fill-color: #6F2DA8;
+	text-fill-color: #6F2DA8;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #6F2DA8;
+	text-stroke-color: #6F2DA8;
+	height: 0%;
+	-webkit-transition: 1.2s;
+	-o-transition: 1.2s;
+	transition: 1.2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part2-7:before{
+	content: attr(data-text-7);
+	position: absolute;
+	-webkit-text-fill-color: #DA2647;
+	text-fill-color: #DA2647;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #DA2647;
+	text-stroke-color: #DA2647;
+	height: 0%;
+	-webkit-transition: 1.4s;
+	-o-transition: 1.4s;
+	transition: 1.4s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part2-8:before{
+	content: attr(data-text-8);
+	position: absolute;
+	-webkit-text-fill-color: #FC74FD;
+	text-fill-color: #FC74FD;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #FC74FD;
+	text-stroke-color: #FC74FD;
+	height: 0%;
+	-webkit-transition: 1.6s;
+	-o-transition: 1.6s;
+	transition: 1.6s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part2-9:before{
+	content: attr(data-text-9);
+	position: absolute;
+	-webkit-text-fill-color: #44D7A8;
+	text-fill-color: #44D7A8;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #44D7A8;
+	text-stroke-color: #44D7A8;
+	height: 0%;
+	-webkit-transition: 1.8s;
+	-o-transition: 1.8s;
+	transition: 1.8s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d2-part:hover .part2-1:before{
+	height: 100%;
+}
+.hover-text-3d2-part:hover .part2-2:before{
+	height: 100%;
+}
+.hover-text-3d2-part:hover .part2-3:before{
+	height: 100%;
+}
+.hover-text-3d2-part:hover .part2-4:before{
+	height: 100%;
+}
+.hover-text-3d2-part:hover .part2-5:before{
+	height: 100%;
+}
+.hover-text-3d2-part:hover .part2-6:before{
+	height: 100%;
+}
+.hover-text-3d2-part:hover .part2-7:before{
+	height: 100%;
+}
+.hover-text-3d2-part:hover .part2-8:before{
+	height: 100%;
+}
+.hover-text-3d2-part:hover .part2-9:before{
+	height: 100%;
+}
+
+/* End Hover 3d2 part */
+
+
+/* Hover 3d3 part */
+
+.hover-text-3d3-part{
+	font-size: 7em;
+	text-align: center;
+}
+
+.part3-9,
+.part3-8,
+.part3-7,
+.part3-6,
+.part3-5,
+.part3-4,
+.part3-3,
+.part3-2,
+.part3-1{
+	-webkit-text-fill-color: #fff;
+	text-fill-color: #fff;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	position: relative;
+}
+
+.part3-1:before{
+	content: attr(data-text-1);
+	position: absolute;
+	-webkit-text-fill-color: #aaf0d1;
+	text-fill-color: #aaf0d1;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #aaf0d1;
+	text-stroke-color: #aaf0d1;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part3-2:before{
+	content: attr(data-text-2);
+	position: absolute;
+	-webkit-text-fill-color: crimson;
+	text-fill-color: crimson;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: crimson;
+	text-stroke-color: crimson;
+	height: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part3-3:before{
+	content: attr(data-text-3);
+	position: absolute;
+	-webkit-text-fill-color: gold;
+	text-fill-color: gold;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: gold;
+	text-stroke-color: gold;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part3-4:before{
+	content: attr(data-text-4);
+	position: absolute;
+	-webkit-text-fill-color: seagreen;
+	text-fill-color: seagreen;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: seagreen;
+	text-stroke-color: seagreen;
+	height: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part3-5:before{
+	content: attr(data-text-5);
+	position: absolute;
+	-webkit-text-fill-color: #00CCCC;
+	text-fill-color: #00CCCC;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #00CCCC;
+	text-stroke-color: #00CCCC;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part3-6:before{
+	content: attr(data-text-6);
+	position: absolute;
+	-webkit-text-fill-color: #6F2DA8;
+	text-fill-color: #6F2DA8;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #6F2DA8;
+	text-stroke-color: #6F2DA8;
+	height: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part3-7:before{
+	content: attr(data-text-7);
+	position: absolute;
+	-webkit-text-fill-color: #DA2647;
+	text-fill-color: #DA2647;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #DA2647;
+	text-stroke-color: #DA2647;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part3-8:before{
+	content: attr(data-text-8);
+	position: absolute;
+	-webkit-text-fill-color: #FC74FD;
+	text-fill-color: #FC74FD;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #FC74FD;
+	text-stroke-color: #FC74FD;
+	height: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.part3-9:before{
+	content: attr(data-text-9);
+	position: absolute;
+	-webkit-text-fill-color: #44D7A8;
+	text-fill-color: #44D7A8;
+	-webkit-text-stroke-width: 2px;
+	text-stroke-width: 2px;
+	-webkit-text-stroke-color: #44D7A8;
+	text-stroke-color: #44D7A8;
+	width: 0%;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	-o-filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.8));
+}
+
+.hover-text-3d3-part:hover .part3-1:before{
+	width: 100%;
+}
+.hover-text-3d3-part:hover .part3-2:before{
+	height: 100%;
+}
+.hover-text-3d3-part:hover .part3-3:before{
+	width: 100%;
+}
+.hover-text-3d3-part:hover .part3-4:before{
+	height: 100%;
+}
+.hover-text-3d3-part:hover .part3-5:before{
+	width: 100%;
+}
+.hover-text-3d3-part:hover .part3-6:before{
+	height: 100%;
+}
+.hover-text-3d3-part:hover .part3-7:before{
+	width: 100%;
+}
+.hover-text-3d3-part:hover .part3-8:before{
+	height: 100%;
+}
+.hover-text-3d3-part:hover .part3-9:before{
+	width: 100%;
+}
+
+/* End Hover 3d3 part */
+
+
+/* End Hover 3d Part */
+
+
+
+

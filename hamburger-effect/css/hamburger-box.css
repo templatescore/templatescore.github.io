@@ -1,0 +1,658 @@
+/* Icon 21 */
+.icon21{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger21{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger21:before,
+.hamburger21:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger21:before{
+	top: -20px;
+}
+
+.hamburger21:after{
+	top: 20px;
+}
+
+.icon21.active21 .hamburger21{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%) rotate(180deg);
+	-ms-transform: translate(-50%,-50%) rotate(180deg);
+	-o-transform: translate(-50%,-50%) rotate(180deg);
+	transform: translate(-50%,-50%) rotate(180deg);
+	background-color: #fa500a;
+}
+
+.icon21.active21 .hamburger21:before{
+	background-color: #fa500a;
+}
+
+.icon21.active21 .hamburger21:after{
+	background-color: #fa500a;
+
+}
+/* End Icon 21 */
+
+
+/* Icon 22 */
+.icon22{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger22{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger22:before,
+.hamburger22:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger22:before{
+	top: -20px;
+}
+
+.hamburger22:after{
+	top: 20px;
+}
+
+.icon22.active22 .hamburger22{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: #fa500a;
+}
+
+.icon22.active22 .hamburger22:before{
+	background-color: #fa500a;
+	-webkit-transform: translateX(-20px);
+	-ms-transform: translateX(-20px);
+	-o-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.icon22.active22 .hamburger22:after{
+	background-color: #fa500a;
+	-webkit-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	-o-transform: translateX(20px);
+	transform: translateX(20px);
+}
+/* End Icon 22 */
+
+
+/* Icon 23 */
+.icon23{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger23{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger23:before,
+.hamburger23:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger23:before{
+	top: -20px;
+}
+
+.hamburger23:after{
+	top: 20px;
+}
+
+.icon23.active23 .hamburger23{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: #fa500a;
+}
+
+.icon23.active23 .hamburger23:before{
+	background-color: #fa500a;
+	left: 0;
+	-webkit-transform: translate(100%);
+	-ms-transform: translate(100%);
+	-o-transform: translate(100%);
+	transform: translate(100%);
+}
+
+.icon23.active23 .hamburger23:after{
+	background-color: #fa500a;
+	right: 0;
+	-webkit-transform: translate(100%);
+	-ms-transform: translate(100%);
+	-o-transform: translate(100%);
+	transform: translate(100%);
+}
+/* End Icon 23 */
+
+
+/* Icon 24 */
+.icon24{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger24{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger24:before,
+.hamburger24:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger24:before{
+	top: -20px;
+}
+
+.hamburger24:after{
+	top: 20px;
+}
+
+.icon24.active24 .hamburger24{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: #fa500a;
+}
+
+.icon24.active24 .hamburger24:before{
+	background-color: #fa500a;
+	top: 0;
+	-webkit-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	-o-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.icon24.active24 .hamburger24:after{
+	background-color: #fa500a;
+
+}
+/* End Icon 24 */
+
+
+/* Icon 25 */
+.icon25{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger25{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger25:before,
+.hamburger25:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger25:before{
+	left: 20px;
+}
+
+.hamburger25:after{
+	right: 20px;
+}
+
+.icon25.active25 .hamburger25{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: #fa500a;
+}
+
+.icon25.active25 .hamburger25:before{
+	background-color: #fa500a;
+	left: 0;
+	-webkit-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	-o-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+
+.icon25.active25 .hamburger25:after{
+	background-color: #fa500a;
+	right: 0;
+	-webkit-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+}
+/* End Icon 25 */
+
+
+/* Icon 26 */
+.icon26{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger26{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger26:before,
+.hamburger26:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger26:before{
+	left: 20px;
+}
+
+.hamburger26:after{
+	right: 20px;
+}
+
+.icon26.active26 .hamburger26{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: #fa500a;
+}
+
+.icon26.active26 .hamburger26:before{
+	background-color: #fa500a;
+	left: 0;
+	-webkit-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	-o-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+
+.icon26.active26 .hamburger26:after{
+	background-color: #fa500a;
+
+}
+/* End Icon 26 */
+
+
+/* Icon 27 */
+.icon27{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger27{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger27:before,
+.hamburger27:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger27:before{
+	left: 20px;
+}
+
+.hamburger27:after{
+	right: 20px;
+}
+
+.icon27.active27 .hamburger27{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: #fa500a;
+}
+
+.icon27.active27 .hamburger27:before{
+	background-color: #fa500a;
+	left: 0;
+	-webkit-transform: translateX(-20px);
+	-ms-transform: translateX(-20px);
+	-o-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.icon27.active27 .hamburger27:after{
+	background-color: #fa500a;
+	left:0;
+	-webkit-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	-o-transform: translateX(20px);
+	transform: translateX(20px);
+}
+/* End Icon 27 */
+
+
+/* Icon 28 */
+.icon28{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger28{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger28:before,
+.hamburger28:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger28:before{
+	left: 20px;
+}
+
+.hamburger28:after{
+	right: 20px;
+}
+
+.icon28.active28 .hamburger28{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: #fa500a;
+}
+
+.icon28.active28 .hamburger28:before{
+	background-color: #fa500a;
+	-webkit-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	-o-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+
+.icon28.active28 .hamburger28:after{
+	background-color: #fa500a;
+	-webkit-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+
+}
+/* End Icon 28 */

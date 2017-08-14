@@ -1,0 +1,881 @@
+.icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger:before,
+.hamburger:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger:before{
+	top: -16px;
+}
+
+.hamburger:after{
+	top: 16px;
+}
+
+.icon.active .hamburger{
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0) ;
+	background-color: rgba(0,0,0,0);
+}
+
+.icon.active .hamburger:before{
+	top: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after{
+	top: 0;
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+/* Icon 2 */
+.icon2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger2{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger2:before,
+.hamburger2:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger2:before{
+	top: -16px;
+}
+
+.hamburger2:after{
+	top: 16px;
+}
+
+.icon2.active2 .hamburger2{
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0) ;
+	background-color: rgba(0,0,0,0);
+}
+
+.icon2.active2 .hamburger2:before{
+	top: 0;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.icon2.active2 .hamburger2:after{
+	top: 0;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+}
+/* End Icon 2 */
+
+/* Icon 3 */
+
+.icon3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger3{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger3:before,
+.hamburger3:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger3:before{
+	top: -16px;
+}
+
+.hamburger3:after{
+	top: 16px;
+}
+
+.icon3.active3 .hamburger3:before{
+	top: 0;
+	-webkit-transform: translateY(-170%);
+	-ms-transform: translateY(-170%);
+	-o-transform: translateY(-170%);
+	transform: translateY(-170%);
+}
+
+.icon3.active3 .hamburger3:after{
+	top: 0;
+	-webkit-transform: translateY(170%);
+	-ms-transform: translateY(170%);
+	-o-transform: translateY(170%);
+	transform: translateY(170%);
+}
+
+/* End Icon 3 */
+
+
+/* Icon 4 */
+
+.icon4{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger4{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger4:before,
+.hamburger4:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger4:before{
+	top: -16px;
+}
+
+.hamburger4:after{
+	top: 16px;
+}
+
+.icon4.active4 .hamburger4:before{
+	top: 0;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+.icon4.active4 .hamburger4:after{
+	top: 0;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+	opacity: 0;
+}
+
+/* End Icon 4 */
+
+/* Icon 5 */
+
+.icon5{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger5{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger5:before,
+.hamburger5:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger5:before{
+	top: -16px;
+}
+
+.hamburger5:after{
+	top: 16px;
+}
+
+.icon5.active5 .hamburger5{
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(90deg);
+	-ms-transform: translate(-50%, -50%) rotate(90deg);
+	-o-transform: translate(-50%, -50%) rotate(90deg);
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.icon5.active5 .hamburger5:before{
+	top: 0;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.icon5.active5 .hamburger5:after{
+	top: 0;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+/* End Icon 5 */
+
+/* Icon 6 */
+.icon6{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger6{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger6:before,
+.hamburger6:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger6:before{
+	top: -16px;
+}
+
+.hamburger6:after{
+	top: 16px;
+}
+
+.icon6.active6 .hamburger6:before{
+	top: 0;
+}
+
+.icon6.active6 .hamburger6:after{
+	top: 0;
+}
+/* End Icon 6 */
+
+/* Icon 7 */
+.icon7{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger7{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger7:before,
+.hamburger7:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger7:before{
+	top: -16px;
+}
+
+.hamburger7:after{
+	top: 16px;
+}
+
+.icon7.active7 .hamburger7{
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(90deg);
+	-ms-transform: translate(-50%, -50%) rotate(90deg);
+	-o-transform: translate(-50%, -50%) rotate(90deg);
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.icon7.active7 .hamburger7:before{
+	top: 0;
+	-webkit-transform: rotate(0deg) translateY(-10px);
+	-ms-transform: rotate(0deg) translateY(-10px);
+	-o-transform: rotate(0deg) translateY(-10px);
+	transform: rotate(0deg) translateY(-10px);
+}
+
+.icon7.active7 .hamburger7:after{
+	top: 0;
+	-webkit-transform: rotate(0deg) translateY(10px);
+	-ms-transform: rotate(0deg) translateY(10px);
+	-o-transform: rotate(0deg) translateY(10px);
+	transform: rotate(0deg) translateY(10px);
+}
+/* Icon 7 */
+
+/* Icon 8 */
+.icon8{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger8{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger8:before,
+.hamburger8:after{
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger8:before{
+	top: -16px;
+}
+
+.hamburger8:after{
+	top: 16px;
+}
+
+.icon8.active8 .hamburger8:before{
+	width: 50px;
+}
+
+.icon8.active8 .hamburger8:after{
+	width: 50px;
+}
+/* End Icon 8 */
+
+/* Icon 9 */
+.icon9{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger9{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger9:before,
+.hamburger9:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger9:before{
+	top: -16px;
+}
+
+.hamburger9:after{
+	top: 16px;
+}
+
+.icon9.active9 .hamburger9{
+	background-color: #111;
+}
+
+.icon9.active9 .hamburger9:before{
+	background-color: #111;
+}
+
+.icon9.active9 .hamburger9:after{
+	background-color: #111;
+}
+/* End Icon 9 */
+
+/* Icon 10 */
+.icon10{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger10{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger10:before,
+.hamburger10:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger10:before{
+	top: -16px;
+}
+
+.hamburger10:after{
+	top: 16px;
+}
+
+.icon10.active10 .hamburger10:before{
+	-webkit-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	-o-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+.icon10.active10 .hamburger10:after{
+	-webkit-transform: translateX(10px);
+	-ms-transform: translateX(10px);
+	-o-transform: translateX(10px);
+	transform: translateX(10px);
+}
+/* End Icon 10 */
+
+/* Icon 11 */
+
+.icon11{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger11{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger11:before,
+.hamburger11:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger11:before{
+	top: -16px;
+}
+
+.hamburger11:after{
+	top: 16px;
+}
+
+.icon11.active11 .hamburger11{
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(90deg);
+	-ms-transform: translate(-50%, -50%) rotate(90deg);
+	-o-transform: translate(-50%, -50%) rotate(90deg);
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.icon11.active11 .hamburger11:before{
+	top: 0;
+	-webkit-transform: rotate(0deg) translateY(-13px) translateX(-10px);
+	-ms-transform: rotate(0deg) translateY(-13px) translateX(-10px);
+	-o-transform: rotate(0deg) translateY(-13px) translateX(-10px);
+	transform: rotate(0deg) translateY(-13px) translateX(-10px);
+}
+
+.icon11.active11 .hamburger11:after{
+	top: 0;
+	-webkit-transform: rotate(0deg) translateY(13px) translateX(10px);
+	-ms-transform: rotate(0deg) translateY(13px) translateX(10px);
+	-o-transform: rotate(0deg) translateY(13px) translateX(10px);
+	transform: rotate(0deg) translateY(13px) translateX(10px);
+}
+
+/* End Icon 11 */
+
+/* Icon 12 */
+.icon12{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger12{
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger12:before,
+.hamburger12:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	box-shadow: 0 2px 5px rgba(0,0,0, 0.2) ;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.hamburger12:before{
+	top: -16px;
+}
+
+.hamburger12:after{
+	top: 16px;
+}
+
+.icon12.active12 .hamburger12:before{
+	width: 60%
+}
+
+.icon12.active12 .hamburger12:after{
+	width: 30%;
+}
+/* End Icon 12 */

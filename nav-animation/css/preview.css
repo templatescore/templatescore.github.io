@@ -33,8 +33,11 @@
 
 .height-2000px{
 	height: 2000px;
-	margin: auto;
+}
+
+.layout-netbook{
 	max-width: 1024px;
+	margin: auto;
 }
 
 .frame{

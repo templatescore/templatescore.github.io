@@ -1,0 +1,462 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Navbar Fixed Responsive Animation Box
+Version           : 1.0
+Last change       : 20/08/2017 [Create Project]
+Framework css	   : Core Framework http://getcore.github.io
+Framework Version : 3.0 Pop Green
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Navbar Fixed Responsive Animation Box
+   container            / .fmc-nav-container
+   main                 / .fmc-nav
+   nav logo             / .fmc-logo
+   nav link container   / .fmc-nav-link
+   nav link             / .fmc-nav-link-items
+   toggle               / .fmc-toggle
+   animation box left   / .fmc-box
+   animation box bottom / .fmc-box-bottom
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background nav	      : rgba(0,0,0,0.9)
+Background animation : crimson, opacity 0.5
+color link           : #fff
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+-------------------------------------------------------------------*/
+
+.fmc-nav-container{
+   display: block;
+   width: 100%;
+   height: 50px;
+   background-color: rgba(0,0,0,0.9);
+   position: fixed;
+   overflow: hidden;
+   z-index: 10;
+}
+
+.fmc-nav{
+   margin: auto;
+   max-width: 1200px;
+   display: block;
+}
+
+.fmc-nav:after{
+   display: table;
+   content: "";
+   clear: both;
+}
+
+.fmc-nav-logo{
+   float: left;
+   margin-left: 16px;
+   position: relative;
+}
+
+.fmc-nav-logo img{
+   display: block;
+   margin: 0;
+   width: 50px;
+   padding: 5px;
+   opacity: 0.7;
+}
+
+.fmc-nav-link{
+   float: right;
+   position: relative;
+}
+
+.fmc-nav-link-items{
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.fmc-nav-link-items li{
+   float: left;
+   line-height: 50px;
+   width: 100px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   text-align: center;
+}
+
+.fmc-nav-link-items li:hover{
+   background-color: crimson;
+   opacity: 0.8;
+}
+
+.fmc-nav-link-items li a{
+   display: block;
+   text-decoration: none;
+   color: #eee;
+   padding: 0 16px;
+}
+
+.fmc-nav-link-items li a:hover{
+   color: #fff;
+}
+
+.fmc-toggle{
+   float: right;
+   line-height: 50px;
+   width: 60px;
+   text-align: center;
+   color: #fff;
+   position: relative;
+   cursor: pointer;
+}
+
+.fmc-toggle-active{
+   background-color: crimson;
+   opacity: 0.8;
+}
+
+@media (max-width: 600px){
+   .fmc-nav-link{
+      display: none;
+      position: fixed;
+      top: 50px;
+      width: 100%;
+      background-color: rgba(0,0,0,0.9);
+      overflow: hidden;
+   }
+   .fmc-nav-link-items li{
+      width: 100%;
+      display: block;
+      text-align: right;
+   }
+   .fmc-nav-link-items li:hover{
+      background-color: transparent;
+   }
+   .fmc-nav-link-items li a{
+      color: #fff;
+      opacity: 0.6;
+   }
+   .fmc-nav-link-items li a:hover{
+      opacity: 1;
+   }
+}
+
+@media (min-width: 601px){
+   .fmc-toggle{
+      display: none;
+   }
+   .fmc-nav-link{
+      display: block!important;
+   }
+}
+
+.fmc-toggle:hover{
+   background-color: crimson;
+   opacity: 0.8;
+}
+
+.fmc-box:nth-child(1){
+   width: 40px;
+   height: 40px;
+   opacity: 0.5;
+   background-color: crimson;
+   position: absolute;
+   -webkit-animation: animationleft 10s infinite linear;
+   -o-animation: animationleft 10s infinite linear;
+   animation: animationleft 10s infinite linear;
+}
+
+.fmc-box:nth-child(2){
+   width: 40px;
+   height: 40px;
+   background-color: crimson;
+   opacity: 0.5;
+   position: absolute;
+   -webkit-animation: animationleft 8s infinite linear;
+   -o-animation: animationleft 8s infinite linear;
+   animation: animationleft 8s infinite linear;
+}
+
+.fmc-box:nth-child(3){
+   width: 30px;
+   height: 30px;
+   background-color: crimson;
+   opacity: 0.5;
+   position: absolute;
+   -webkit-animation: animationleft 9s infinite linear;
+   -o-animation: animationleft 9s infinite linear;
+   animation: animationleft 9s infinite linear;
+}
+
+.fmc-box:nth-child(4){
+   width: 25px;
+   height: 25px;
+   background-color: crimson;
+   opacity: 0.5;
+   position: absolute;
+   -webkit-animation: animationleft 9.5s infinite linear;
+   -o-animation: animationleft 9.5s infinite linear;
+   animation: animationleft 9.5s infinite linear;
+}
+
+.fmc-box:nth-child(5){
+   width: 50px;
+   height: 50px;
+   background-color: crimson;
+   opacity: 0.5;
+   position: absolute;
+   -webkit-animation: animationleft 11s infinite linear;
+   -o-animation: animationleft 11s infinite linear;
+   animation: animationleft 11s infinite linear;
+}
+
+.fmc-box:nth-child(5){
+   width: 70px;
+   height: 70px;
+   background-color: crimson;
+   opacity: 0.5;
+   position: absolute;
+   -webkit-animation: animationleft 14s infinite linear;
+   -o-animation: animationleft 14s infinite linear;
+   animation: animationleft 14s infinite linear;
+}
+
+.fmc-box:nth-child(5){
+   width: 60px;
+   height: 60px;
+   background-color: crimson;
+   opacity: 0.5;
+   position: absolute;
+   -webkit-animation: animationleft 12s infinite linear;
+   -o-animation: animationleft 12s infinite linear;
+   animation: animationleft 12s infinite linear;
+}
+
+.fmc-box:nth-child(8){
+   width: 80px;
+   height: 80px;
+   background-color: crimson;
+   opacity: 0.5;
+   position: absolute;
+   -webkit-animation: animationleft 13s infinite linear;
+   -o-animation: animationleft 13s infinite linear;
+   animation: animationleft 13s infinite linear;
+}
+
+.fmc-box:nth-child(9){
+   width: 150px;
+   height: 150px;
+   background-color: crimson;
+   opacity: 0.5;
+   position: absolute;
+   -webkit-animation: animationleft 15s infinite linear;
+   -o-animation: animationleft 15s infinite linear;
+   animation: animationleft 15s infinite linear;
+}
+
+.fmc-box:nth-child(10){
+   width: 100px;
+   height: 100px;
+   background-color: crimson;
+   opacity: 0.5;
+   position: absolute;
+   -webkit-animation: animationleft 20s infinite linear;
+   -o-animation: animationleft 20s infinite linear;
+   animation: animationleft 20s infinite linear;
+}
+
+@keyframes animationleft{
+   from{
+      left:-200px;
+   } to{
+      left:100%;
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+@-webkit-keyframes animationleft{
+   from{
+      left:-200px;
+   } to{
+      left:100%;
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+@-o-keyframes animationleft{
+   from{
+      left:-200px;
+   } to{
+      left:100%;
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+@media (max-width: 600px){
+   .fmc-box-bottom:nth-child(1){
+      width: 40px;
+      height: 40px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 5%;
+      -webkit-animation: animationBb 10s infinite linear;
+      -o-animation: animationBb 10s infinite linear;
+      animation: animationBb 10s infinite linear;
+   }
+   .fmc-box-bottom:nth-child(2){
+      width: 100px;
+      height: 100px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 40%;
+      -webkit-animation: animationBb 20s infinite linear;
+      -o-animation: animationBb 20s infinite linear;
+      animation: animationBb 20s infinite linear;
+   }
+   .fmc-box-bottom:nth-child(3){
+      width: 80px;
+      height: 80px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 20%;
+      -webkit-animation: animationBb 15s infinite linear;
+      -o-animation: animationBb 15s infinite linear;
+      animation: animationBb 15s infinite linear;
+   }
+   .fmc-box-bottom:nth-child(4){
+      width: 80px;
+      height: 80px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 20%;
+      -webkit-animation: animationBb 15s infinite linear;
+      -o-animation: animationBb 15s infinite linear;
+      animation: animationBb 15s infinite linear;
+   }
+   .fmc-box-bottom:nth-child(5){
+      width: 90px;
+      height: 90px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 70%;
+      -webkit-animation: animationBb 14s infinite linear;
+      -o-animation: animationBb 14s infinite linear;
+      animation: animationBb 14s infinite linear;
+   }
+   .fmc-box-bottom:nth-child(6){
+      width: 60px;
+      height: 60px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 70%;
+      -webkit-animation: animationBb 13s infinite linear;
+      -o-animation: animationBb 13s infinite linear;
+      animation: animationBb 13s infinite linear;
+   }
+   .fmc-box-bottom:nth-child(7){
+      width: 70px;
+      height: 70px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 60%;
+      -webkit-animation: animationBb 8s infinite linear;
+      -o-animation: animationBb 8s infinite linear;
+      animation: animationBb 8s infinite linear;
+   }
+   .fmc-box-bottom:nth-child(8){
+      width: 50px;
+      height: 50px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 30%;
+      -webkit-animation: animationBb 11s infinite linear;
+      -o-animation: animationBb 11s infinite linear;
+      animation: animationBb 11s infinite linear;
+   }
+   .fmc-box-bottom:nth-child(9){
+      width: 20px;
+      height: 20px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 50%;
+      -webkit-animation: animationBb 7s infinite linear;
+      -o-animation: animationBb 7s infinite linear;
+      animation: animationBb 7s infinite linear;
+   }
+   .fmc-box-bottom:nth-child(10){
+      width: 200px;
+      height: 200px;
+      opacity: 0.5;
+      background-color: crimson;
+      position: absolute;
+      left: 80%;
+      -webkit-animation: animationBb 20s infinite linear;
+      -o-animation: animationBb 20s infinite linear;
+      animation: animationBb 20s infinite linear;
+   }
+}
+
+@keyframes animationBb {
+   from{
+      bottom:-200px;
+   } to{
+      bottom:100%;
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+@-o-keyframes animationBb {
+   from{
+      bottom:-200px;
+   } to{
+      bottom:100%;
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+@-webkit-keyframes animationBb {
+   from{
+      bottom:-200px;
+   } to{
+      bottom:100%;
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}

@@ -1,0 +1,258 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Dropdown Effect Animation
+Version           : 1.0
+Last change       : 20/08/2017 [Create Project]
+Framework css     : Core Framework http://getcore.github.io
+Framework Version : 3.0 Pop Green
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  fmc-dropdown-animation
+    container  / .fmc-dropdown-animation
+    main       / .fmc-dropdown-content-animation
+    animation  / @keyframes animationleft
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background frame    : #fff
+Background button   : rgba(0,0,0,0.8)
+Background dropdown : rgba(0,0,0,0.8)
+Background active   : crimson / color group
+Header              : #444 by core Framework
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+-------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------
+Note : all class arrow and droplink for all file project
+-------------------------------------------------------------------*/
+
+/* Arrow */
+.fmc-arrow{
+    border: solid rgba(255,255,255, 0.9);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2.5px;
+}
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/* End Arrow */
+
+/* fmc Droplink */
+.fmc-droplink{
+    float: left;
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 50px;
+}
+.fmc-arrow{
+    float: right;
+    display: block;
+    text-align: right;
+    margin-top: 6px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fmc-dropdown-animation li:hover .arrow-down{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.fmc-droplink-container:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.fmc-dropdown-animation{
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0,0,0,0.8);
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.fmc-dropdown-animation li{
+    display: block;
+}
+.fmc-dropdown-animation li a{
+    padding: 12px 16px;
+    display: block;
+    color: rgba(255,255,255, 0.9);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fmc-dropdown-animation li:hover{
+    -webkit-box-shadow: inset 5px 0 crimson;
+    box-shadow: inset 5px 0 crimson;
+}
+.fmc-dropdown-content-animation{
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 160px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.fmc-dropdown-content-animation li{
+    background-color: rgba(0,0,0, 0.8);
+}
+.fmc-dropdown-content-animation li:hover{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.fmc-dropdown-content-animation li a:hover{
+    -webkit-box-shadow: inset 5px 0 crimson;
+    box-shadow: inset 5px 0 crimson;
+    color: #fff;
+}
+.fmc-dropdown-animation:hover .fmc-dropdown-content-animation{
+    display: block;
+}
+
+/* Animation Default 10 List */
+.fmc-dropdown-content-animation li:nth-child(1){
+    position:relative;
+    -webkit-animation: animationleft 0.2s;
+    -o-animation: animationleft 0.2s;
+    animation: animationleft 0.2s;
+}
+.fmc-dropdown-content-animation li:nth-child(2){
+    position:relative;
+    -webkit-animation: animationleft 0.4s;
+    -o-animation: animationleft 0.4s;
+    animation: animationleft 0.4s;
+}
+.fmc-dropdown-content-animation li:nth-child(3){
+    position:relative;
+    -webkit-animation: animationleft 0.6s;
+    -o-animation: animationleft 0.6s;
+    animation: animationleft 0.6s;
+}
+.fmc-dropdown-content-animation li:nth-child(4){
+    position:relative;
+    -webkit-animation: animationleft 0.8s;
+    -o-animation: animationleft 0.8s;
+    animation: animationleft 0.8s;
+}
+.fmc-dropdown-content-animation li:nth-child(5){
+    position:relative;
+    -webkit-animation: animationleft 1s;
+    -o-animation: animationleft 1s;
+    animation: animationleft 1s;
+}
+.fmc-dropdown-content-animation li:nth-child(6){
+    position:relative;
+    -webkit-animation: animationleft 1.2s;
+    -o-animation: animationleft 1.2s;
+    animation: animationleft 1.2s;
+}
+.fmc-dropdown-content-animation li:nth-child(7){
+    position:relative;
+    -webkit-animation: animationleft 1.4s;
+    -o-animation: animationleft 1.4s;
+    animation: animationleft 1.4s;
+}
+.fmc-dropdown-content-animation li:nth-child(8){
+    position:relative;
+    -webkit-animation: animationleft 1.6s;
+    -o-animation: animationleft 1.6s;
+    animation: animationleft 1.6s;
+}
+.fmc-dropdown-content-animation li:nth-child(9){
+    position:relative;
+    -webkit-animation: animationleft 1.8s;
+    -o-animation: animationleft 1.8s;
+    animation: animationleft 1.8s;
+}
+.fmc-dropdown-content-animation li:nth-child(10){
+    position:relative;
+    -webkit-animation: animationleft 2s;
+    -o-animation: animationleft 2s;
+    animation: animationleft 2s;
+}
+.fmc-dropdown-content-animation li:nth-child(10):hover,
+.fmc-dropdown-content-animation li:nth-child(9):hover,
+.fmc-dropdown-content-animation li:nth-child(8):hover,
+.fmc-dropdown-content-animation li:nth-child(7):hover,
+.fmc-dropdown-content-animation li:nth-child(6):hover,
+.fmc-dropdown-content-animation li:nth-child(5):hover,
+.fmc-dropdown-content-animation li:nth-child(4):hover,
+.fmc-dropdown-content-animation li:nth-child(3):hover,
+.fmc-dropdown-content-animation li:nth-child(2):hover,
+.fmc-dropdown-content-animation li:nth-child(1):hover{
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.8);
+    box-shadow: 0 0 3px rgba(0,0,0,0.8);
+}
+
+@-webkit-keyframes animationleft{
+    from{
+        left:-300px;
+        opacity:0;
+    } to{
+        left:0;
+        opacity:1;
+    }
+}
+
+@-o-keyframes animationleft{
+    from{
+        left:-300px;
+        opacity:0;
+    } to{
+        left:0;
+        opacity:1;
+    }
+}
+
+@keyframes animationleft{
+    from{
+        left:-300px;
+        opacity:0;
+    } to{
+        left:0;
+        opacity:1;
+    }
+}
+/* End Animation Default 10 list */

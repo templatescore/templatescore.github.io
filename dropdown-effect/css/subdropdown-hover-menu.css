@@ -1,0 +1,251 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Subdropdown Effect Menu
+Version           : 1.0
+Last change       : 20/08/2017 [Create Project]
+Framework css     : Core Framework http://getcore.github.io
+Framework Version : 3.0 Pop Green
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  fmc-subdropdown-menu
+    container  / .fmc-subdropdown-menu
+    main       / .fmc-subdropdown-content-menu
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background frame    : #fff
+Background button   : rgba(0,0,0,0.8)
+Background dropdown : rgba(0,0,0,0.8)
+Background active   : crimson / color group
+Header              : #444 by core Framework
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+-------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------
+Note : all class arrow and droplink for all file project
+-------------------------------------------------------------------*/
+
+
+/* Arrow */
+.fmc-arrow{
+    border: solid rgba(255,255,255, 0.9);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2.5px;
+}
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/* End Arrow */
+
+/* fmc Droplink */
+.fmc-droplink-container:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.fmc-droplink{
+    float: left;
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 50px;
+}
+.fmc-arrow{
+    float: right;
+    display: block;
+    text-align: right;
+    margin-top: 6px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fmc-subdropdown-menu li:hover .arrow-down{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.fmc-subdropdown-menu li .fmc-subdropdown-content-menu li .arrow-down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.fmc-subdropdown-menu li .fmc-subdropdown-content-menu li:hover .arrow-down{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.fmc-subdropdown-menu li .fmc-subdropdown-content-menu li .fmc-subdropdown-content-subcol-menu li .arrow-down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.fmc-subdropdown-menu li .fmc-subdropdown-content-menu li .fmc-subdropdown-content-subcol-menu li:hover .arrow-down{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.fmc-subdropdown-menu{
+    display: inline-block;
+    background-color: rgba(0,0,0,0.8);
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.fmc-subdropdown-menu li{
+    display: block;
+}
+.fmc-subdropdown-menu li a{
+    padding: 12px 16px;
+    display: block;
+    color: rgba(255,255,255, 0.9);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fmc-subdropdown-menu li:hover{
+    -webkit-box-shadow: inset 5px 0 crimson;
+    box-shadow: inset 5px 0 crimson;
+}
+.fmc-subdropdown-content-menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.fmc-subdropdown-content-menu li:hover{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.fmc-subdropdown-content-menu li a:hover{
+    -webkit-box-shadow: inset 5px 0 crimson;
+    box-shadow: inset 5px 0 crimson;
+    color: #fff;
+}
+
+.fmc-subdropdown-menu:hover .fmc-subdropdown-content-menu{
+    display: block;
+}
+
+.fmc-subdropdown-content-col-menu{
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.8);
+    box-shadow: 0 0 1px rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+
+/* Active Subdropdown Content */
+.fmc-subdropdown-content-menu li:hover > .fmc-droplink-container{
+    -webkit-box-shadow: inset 5px 0 crimson;
+    box-shadow: inset 5px 0 crimson;
+}
+
+.fmc-subdropdown-content-menu li .fmc-subdropdown-content-subcol-menu li:hover > .fmc-droplink-container{
+    -webkit-box-shadow: inset 5px 0 crimson;
+    box-shadow: inset 5px 0 crimson;
+}
+/* End Active Subdropdown Content */
+
+/* fmc-subdropdown-content-subcol-menu */
+.fmc-subdropdown-content-subcol-menu{
+    display: none;
+    position: static;
+    width: 100%;
+    padding: 0 0 0 16px;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+.fmc-subdropdown-content-subcollast-menu{
+    display: none;
+    position: static;
+    width: 100%;
+    padding: 0 0 0 16px;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.fmc-subdropdown-content-menu li:hover .fmc-subdropdown-content-subcol-menu{
+    display: block;
+}
+
+.fmc-subdropdown-content-menu li .fmc-subdropdown-content-subcol-menu li:hover .fmc-subdropdown-content-subcollast-menu{
+    display: block;
+}
+
+/* End fmc-subdropdown-content-subcol-menu */
+
+
+.fmc-subdropdown-content-menu li{
+    position:relative;
+    -webkit-animation: animationleft 0.7s;
+    -o-animation: animationleft 0.7s;
+    animation: animationleft 0.7s;
+}
+
+@-webkit-keyframes animationleft{
+    from{
+        bottom:-300px;
+        opacity:0;
+    } to{
+        bottom:0;
+        opacity:1;
+    }
+}
+
+@-o-keyframes animationleft{
+    from{
+        bottom:-300px;
+        opacity:0;
+    } to{
+        bottom:0;
+        opacity:1;
+    }
+}
+
+@keyframes animationleft{
+    from{
+        bottom:-300px;
+        opacity:0;
+    } to{
+        bottom:0;
+        opacity:1;
+    }
+}
+

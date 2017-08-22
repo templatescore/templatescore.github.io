@@ -1,0 +1,154 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Dropdown Effect Fade
+Version           : 1.0
+Last change       : 20/08/2017 [Create Project]
+Framework css     : Core Framework http://getcore.github.io
+Framework Version : 3.0 Pop Green
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  fmc-dropdown-fade
+    container  / .fmc-dropdown-fade
+    main       / .fmc-dropdown-content-fade
+    
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background frame    : #fff
+Background button   : rgba(0,0,0,0.8)
+Background dropdown : rgba(0,0,0,0.8)
+Background active   : crimson / color group
+Header              : #444 by core Framework
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+-------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------
+Note : all class arrow and droplink for all file project
+-------------------------------------------------------------------*/
+
+/* Arrow */
+.fmc-arrow{
+    border: solid rgba(255,255,255, 0.9);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2.5px;
+}
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/* End Arrow */
+
+/* fmc Droplink */
+.fmc-droplink{
+    float: left;
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 50px;
+}
+.fmc-arrow{
+    float: right;
+    display: block;
+    text-align: right;
+    margin-top: 6px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fmc-dropdown-fade li:hover .arrow-down{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.fmc-droplink-container:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.fmc-dropdown-fade{
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0,0,0,0.8);
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.fmc-dropdown-fade li{
+    display: block;
+}
+.fmc-dropdown-fade li a{
+    padding: 12px 16px;
+    display: block;
+    color: rgba(255,255,255, 0.9);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fmc-dropdown-fade li:hover{
+    -webkit-box-shadow: inset 5px 0 crimson;
+    box-shadow: inset 5px 0 crimson;
+}
+.fmc-dropdown-content-fade{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 160px;
+    background-color: rgba(0,0,0,0.8);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.fmc-dropdown-content-fade li:hover{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.fmc-dropdown-content-fade li a:hover{
+    -webkit-box-shadow: inset 5px 0 crimson;
+    box-shadow: inset 5px 0 crimson;
+    color: #fff;
+}
+
+.fmc-dropdown-fade:hover .fmc-dropdown-content-fade{
+    opacity: 1;
+    visibility: visible;
+}
+

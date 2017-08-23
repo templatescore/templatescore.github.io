@@ -45,6 +45,10 @@ iframe{
 	background-color: #fff;
 }
 
+.grid{
+	text-align: center;
+}
+
 .frame{
 	border: 1px solid #ddd;
 	height: 350px;

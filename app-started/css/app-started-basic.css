@@ -1,0 +1,133 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : App Started Basic
+Version           : 1.0
+Last change       : 22/08/2017 [Create Project]
+Framework css	   : Core Framework http://getcore.github.io
+Framework Version : 3.0 Pop Green
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. App Started Basic
+   container            / .fmc-app-container
+   Browser Width        / .fmc-app-layout
+   Text Header          / .fmc-app-header
+   Video App            / .fmc-app-smartphone
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background Image       : bg-3-pixabay by pixabay.com
+Background Transfarent : rgba(255,255,255,0.2)
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+h1   : by Core Framework
+-------------------------------------------------------------------*/
+
+.fmc-app-container{
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background-image: url(../images/bg-3-pixabay.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   -webkit-transition: 5s;
+   -o-transition: 5s;
+   transition: 5s;
+   overflow: hidden;
+}
+.fmc-app-container:hover{
+   -webkit-filter: hue-rotate(40deg);
+   -o-filter: hue-rotate(40deg);
+   filter: hue-rotate(40deg);
+}
+.fmc-app-layout{
+   max-width: 1200px;
+   margin: auto;
+   position: relative;
+   height: 100%;
+}
+.fmc-app-header{
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
+}
+.fmc-app-header h1{
+   color: #fff;
+   opacity: 0.4;
+}
+.fmc-app-header p{
+   color: #fff;
+   opacity: 0.4;
+}
+.fmc-app-smartphone{
+   border: 20px solid rgba(255,255,255,0.2);
+   box-shadow: 0 0 3px rgba(255,255,255,0.2);
+   border-bottom-width: 30px;
+   border-top-width: 30px;
+   border-radius: 16px;
+   height: 500px;
+   width: 288px;
+   position: absolute;
+   top: 50%;
+   left: 80%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+@media (max-width: 1024px){
+   .fmc-app-smartphone{
+      height: 415px;
+      width: 240px;
+   }
+}
+@media (max-width: 993px){
+   .fmc-app-smartphone{
+      display: none;
+   }
+   .fmc-app-header{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%); 
+      text-align: center;
+   }
+}
+.fmc-app-video{
+   border: none;
+   height: 100%;
+   width: 100%;
+}
+.fmc-app-download{
+   padding: 12px 16px;
+   border: none;
+   outline: none;
+   background-color: rgba(255,255,255, 0.2);
+   opacity: 0.5;
+   color: #fff;
+   -webkit-transition: 0.3s;
+   -o-transition: 0.3s;
+   transition: 0.3s;
+}
+.fmc-app-download:hover{
+   background-color: rgba(255,255,255, 0.3);
+}
+

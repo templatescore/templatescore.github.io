@@ -1,0 +1,343 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Background Animation Circle Atom
+Version           : 1.0
+Last change       : 24/08/2017 [Create Project]
+Framework css	  : Core Framework http://getcore.github.io
+Framework Version : 3.0 Pop Green
+Plugin 1          : modernizr 3.5.0 (Custom Build)
+Plugin 2          : StyleFix 1.0.3 & PrefixFree 1.0.7
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Background Animation Circle Atom
+   container         / .fmc-bg-container
+   max width browser / .fmc-layout
+   Text              / .fmc-header
+   Button            / .fmc-button
+   Animation         / .fmc-circle
+   
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background Container : rgba(0,0,0,0.9)
+Background Animation : rgba(255,255,255, 0.5)
+Background Header    : rgba(255,255,255, 0.3)
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+H1   : By Core Framework
+p    : By Core Framework
+-------------------------------------------------------------------*/
+
+.fmc-bg-container{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.9);
+	overflow: hidden;
+	perspective: 2000px;
+}
+.fmc-layout{
+	max-width: 1024px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+	perspective: 2000px;
+}
+.fmc-header{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+}
+.fmc-header h2{
+	color: rgba(255,255,255,0.5);
+}
+.fmc-header p{
+	color: rgba(255,255,255,0.5);
+}
+.fmc-button{
+	background-color: rgba(255,255,255,0.5);
+	transition: 0.3s;
+	border: none;
+	padding: 12px 16px;
+	color: #000;
+}
+.fmc-button:hover{
+	background-color: rgba(255,255,255,0.6);
+}
+@media (min-width: 1024px){
+	.fmc-header{
+		text-align: left;
+		position: absolute;
+		top: 50%;
+		left: 30%;
+		transform: translate(-50%,-50%);
+		z-index: 10;
+	}
+	.fmc-header h2{
+		color: rgba(255,255,255,0.5);
+	}
+	.fmc-header p{
+		color: rgba(255,255,255,0.5);
+	}
+	.fmc-button{
+		background-color: rgba(255,255,255,0.5);
+		transition: 0.3s;
+		border: none;
+		padding: 12px 16px;
+		color: #000;
+	}
+	.fmc-button:hover{
+		background-color: rgba(255,255,255,0.6);
+	}
+}
+
+/* Circle*/
+.fmc-circle:nth-child(1){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateY(1000deg) rotateX(1000deg) rotate(0deg);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.5);
+	animation: scaleOne 5.5s infinite alternate linear;
+	opacity: 0;
+}
+
+@keyframes scaleOne{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateY(180deg) rotateX(90deg) rotate(1000deg);
+		opacity: 0;
+	}
+}
+.fmc-circle:nth-child(2){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateX(135deg) rotateY(135deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.5);
+	border-left: none;
+	border-top: none;
+	animation: scaleTwo 5s infinite alternate linear;
+}
+
+@keyframes scaleTwo{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateX(135deg) rotateY(135deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+.fmc-circle:nth-child(3){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateX(45deg) rotateY(45deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.5);
+	border-bottom: none;
+	border-left: none;
+	animation: scaleThree 4.5s infinite alternate linear;
+}
+
+@keyframes scaleThree{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateX(45deg) rotateY(45deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+.fmc-circle:nth-child(4){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateX(45deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.5);
+	border-top: none;
+	border-right: none;
+	animation: scaleFour 4s infinite alternate linear;
+}
+
+@keyframes scaleFour{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateX(45deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+.fmc-circle:nth-child(5){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateX(135deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.5);
+	border-bottom: none;
+	border-left: none;
+	animation: scaleFive 3.5s infinite alternate linear;
+}
+
+@keyframes scaleFive{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateX(135deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+.fmc-circle:nth-child(6){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateX(100deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 15px solid rgba(255,255,255,0.5);
+	border-bottom: none;
+	border-right: none;
+	animation: scaleSix 3s infinite alternate linear;
+}
+
+@keyframes scaleSix{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateX(100deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+.fmc-circle:nth-child(7){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateY(-105deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 20px solid rgba(255,255,255,0.5);
+	border-bottom: none;
+	border-left: none;
+	animation: scaleSeven 2.5s infinite alternate linear;
+}
+
+@keyframes scaleSeven{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateY(-105deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+.fmc-circle:nth-child(8){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateY(45deg) rotateX(45deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.5);
+	border-bottom: none;
+	border-left: none;
+	animation: scaleEight 2s infinite alternate linear;
+}
+
+@keyframes scaleEight{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateY(45deg) rotateX(45deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+.fmc-circle:nth-child(9){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateY(135deg) rotateX(135deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.5);
+	border-bottom: none;
+	border-right: none;
+	animation: scaleNine 1.5s infinite alternate linear;
+}
+
+@keyframes scaleNine{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateY(135deg) rotateX(135deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+.fmc-circle:nth-child(10){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateY(113deg) rotateX(115deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.5);
+	border-bottom: none;
+	border-right: none;
+	animation: scaleTen 3s infinite alternate linear;
+}
+
+@keyframes scaleTen{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateY(113deg) rotateX(115deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+.fmc-circle:nth-child(11){
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%) rotateX(-45deg) rotateY(-45deg) rotate(0deg);
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.5);
+	border-bottom: none;
+	border-right: none;
+	animation: scaleEleven 2s infinite alternate linear;
+}
+
+@keyframes scaleEleven{
+	100%{
+		border-radius: 50%;
+		transform: translate(-50%,-50%) rotateX(-45deg) rotateY(-45deg) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+/* End Circle */

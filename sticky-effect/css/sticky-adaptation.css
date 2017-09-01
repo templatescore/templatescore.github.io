@@ -1,0 +1,79 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Sticky Adaptation
+Version           : 1.0
+Last change       : 27/08/2017 [Create Project]
+Framework css	  : Core Framework 3.0 Pop Green http://getcore.github.io 
+Framework js      : jQuery v3.2.1 min.js
+Plugin 1          : modernizr 3.5.0 (Custom Build)
+Plugin 2          : StyleFix 1.0.3 & PrefixFree 1.0.7
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. 	Sticky Adaptation
+	navbar        / .fmc-menu
+	active sticky / .fmc-sticky
+   
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background Navbar : Crimson
+Background Sticky : rgba(0,0,0,0.9)
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+-------------------------------------------------------------------*/
+.fmc-menu{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: rgba(255,255,255,0.8);
+	display: flex;
+	transition: 0.7s;
+	z-index: 10;
+}
+.fmc-sticky-adaptation{
+	background-color: crimson;
+}
+.fmc-menu li{
+	list-style-type: none;
+}
+.fmc-menu li a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+	padding: 16px;
+	display: block;
+}
+.fmc-scroll{
+	height: 2000px;
+}
+.fmc-images-container{
+	position: relative;
+	overflow: hidden;
+}
+.fmc-light{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+.fmc-images{
+	background-image: url(../img/bg-6-pixabay.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+}

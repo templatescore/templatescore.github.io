@@ -1,0 +1,99 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Sticky Sub Hidden
+Version           : 1.0
+Last change       : 27/08/2017 [Create Project]
+Framework css	  : Core Framework 3.0 Pop Green http://getcore.github.io 
+Framework js      : jQuery v3.2.1 min.js
+Plugin 1          : modernizr 3.5.0 (Custom Build)
+Plugin 2          : StyleFix 1.0.3 & PrefixFree 1.0.7
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. 	Sticky Sub Hidden
+	navbar            / .fmc-menu
+	navbar 2          / .fmc-sub-menu
+	active sticky     / .fmc-sticky
+	active sub sticky / .fmc-sub-sticky
+   
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background Header   : rgba(0,0,0,0.9)
+Background Navbar   : Crimson
+Background Navbar 2 : rgba(0,0,0,0.9)
+Background Sticky   : rgba(0,0,0,0.9)
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+-------------------------------------------------------------------*/
+.fmc-menu{
+	margin: 50px 0 0 0;
+	padding: 0;
+	position: fixed;
+	height: 60px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: crimson;
+	color: rgba(255,255,255,0.8);
+	display: flex;
+	transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.fmc-menu li{
+	list-style-type: none;
+	line-height: 60px;
+}
+.fmc-menu li a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+	padding: 0 20px;
+	display: block;
+}
+.fmc-sub-menu{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.9);
+	color: rgba(255,255,255,0.8);
+	transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+	overflow: hidden;
+}
+.fmc-sub-menu li{
+	list-style-type: none;
+	float: right;
+}
+.fmc-sub-menu li a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+	padding: 16px;
+	display: block;
+}
+@media (max-width: 600px){
+	.fmc-sub-menu li:not(:first-child){
+		display: none;
+	}
+}
+.fmc-sticky-hidden{
+	transform: translateY(-50px);
+}
+.fmc-sub-sticky-hidden{
+	transform: translateY(-100%);
+}
+.fmc-scroll{
+	height: 2000px;
+}

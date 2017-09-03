@@ -1028,3 +1028,21 @@ Body : 16px Segoe UI, sans-serif by Core Framework
 		transform: rotate(360deg);
 	}
 }
+@-webkit-keyframes box{
+	from{
+		right: -100px;
+	}
+	to{
+		right: 130%;
+		transform: rotate(360deg);
+	}
+}
+@-o-keyframes box{
+	from{
+		right: -100px;
+	}
+	to{
+		right: 130%;
+		transform: rotate(360deg);
+	}
+}

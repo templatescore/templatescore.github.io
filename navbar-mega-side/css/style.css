@@ -1,0 +1,318 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Navbar Mega Side
+Version           : 1.0
+Last change       : 16/09/2017 [Create Project]
+Framework css	  : Core Framework 3.0 Pop Green http://getcore.github.io 
+Framework js	  : jQuery v3.2.1 min.js 
+Plugin 1          : modernizr 3.5.0 (Custom Build)
+Plugin 2          : StyleFix 1.0.3 & PrefixFree 1.0.7
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Navbar
+   Mega Side
+   Link Items
+   
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background Navbar : #161616
+Background Second : #222
+Background Active : teal
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+-------------------------------------------------------------------*/
+
+.fmc-nav-container{
+	height: 50px;
+	background-color: #161616;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+}
+.fmc-nav-bars{
+	float: left;
+	line-height: 50px;
+	padding: 0 16px;
+	color: rgba(255,255,255,0.8);
+	transition: 0.3s;
+	cursor: pointer;
+}
+.fmc-nav-bars:hover{
+	box-shadow: inset 0 -5px teal;
+}
+
+/*actived side*/
+.fmc-nav-bars:hover .fmc-nav-side{
+	visibility: visible;
+	width: 220px;
+	left: 0;
+}
+
+/*nav side*/
+.fmc-nav-side{
+	margin: 0;
+	padding: 0;
+	left: -100%;
+	position: fixed;
+	width: 220px;
+	height: 100%;
+	background-color: #222;
+	transition: 0.5s;
+	box-shadow: inset -8px 0 #161616;
+}
+.fmc-nav-side li:hover{
+	box-shadow: inset 5px 0 teal;
+}
+.fmc-nav-side > li:first-child{
+	font-size: 20px;
+	height: 60px;
+	line-height: 60px;
+}
+.fmc-nav-side li{
+	list-style-type: none;
+	overflow: hidden;
+	transition: 0.1s;
+	padding: 0px 16px;
+	margin: 0;
+	height: 35px;
+	line-height: 35px;
+}
+.fmc-nav-side li a{
+	text-decoration: none;
+}
+
+.fmc-nav-side li:hover .fmc-side-dropdown{
+	visibility: visible;
+	height: 100%;
+}
+
+@media (max-width: 660px){
+	.fmc-nav-side > li:first-child,
+	.fmc-nav-side .fmc-side-dropdown > li:first-child,
+	.fmc-nav-side .fmc-side-dropdown .fmc-side-subdropdown > li:first-child{
+		font-size: 16px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.fmc-nav-side .fmc-side-dropdown{
+		border-left: 2px solid #161616;
+		left: 30px;
+	}
+	.fmc-nav-side .fmc-side-dropdown .fmc-side-subdropdown{
+		border-left: 2px solid #161616;
+		left: 30px;
+	}
+	.fmc-nav-side li:hover .fmc-side-dropdown{
+		left: 30px;
+	}
+	.fmc-nav-side .fmc-side-dropdown li:hover .fmc-side-subdropdown{
+		left: 30px;
+	}
+}
+
+/*side dropdown*/
+.fmc-side-dropdown{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 0%;
+	bottom: 0;
+	left: 100%;
+	position: absolute;
+	background-color: #222;
+	transition: 0.5s;
+	box-shadow: inset -8px 0 #161616;
+}
+.fmc-side-dropdown li{
+	list-style-type: none;
+	overflow: hidden;
+	transition: 0.1s;
+	padding: 0 16px;
+	margin: 0;
+	height: 35px;
+	line-height: 35px;
+}
+.fmc-side-dropdown > li:first-child{
+	font-size: 20px;
+	height: 60px;
+	line-height: 60px;
+}
+
+/*side subdropdown*/
+.fmc-nav-side .fmc-side-dropdown li:hover .fmc-side-subdropdown{
+	visibility: visible;
+	height: 100%;
+}
+
+.fmc-side-subdropdown{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 0%;
+	bottom: 0;
+	left: 100%;
+	position: absolute;
+	background-color: #222;
+	transition: 0.5s;
+	box-shadow: inset -8px 0 #161616;
+}
+.fmc-side-subdropdown li{
+	list-style-type: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	transition: 0.1s;
+	padding: 0 16px;
+	margin: 0;
+	height: 35px;
+	line-height: 35px;
+}
+.fmc-side-subdropdown > li:first-child{
+	font-size: 20px;
+	height: 60px;
+	line-height: 60px;
+}
+
+/*hover icon*/
+.fmc-rotate-side{
+	transition: 0.3s;
+	margin-right: 5px;
+}
+.fmc-folder-open{
+	width: 20px;
+	overflow: hidden;
+}
+.fmc-nav-side > li:hover .fmc-rotate-side{
+	transform: rotate(90deg);
+}
+.fmc-nav-side .fmc-side-dropdown > li .fmc-rotate-side{
+	transform: rotate(0deg);
+}
+.fmc-nav-side .fmc-side-dropdown > li:hover .fmc-rotate-side{
+	transform: rotate(90deg);
+}
+
+.fmc-nav-side .fmc-side-dropdown .fmc-side-subdropdown > li .fmc-rotate-side{
+	transform: rotate(0deg);
+}
+.fmc-nav-side .fmc-side-dropdown .fmc-side-subdropdown > li:hover .fmc-rotate-side{
+	transform: rotate(90deg);
+}
+
+.fmc-nav-side > li:hover .fmc-folder-open:before{
+	content: "\f07c";
+}
+.fmc-nav-side .fmc-side-dropdown > li .fmc-folder-open:before{
+	content: "\f07b";
+}
+.fmc-nav-side .fmc-side-dropdown > li:hover .fmc-folder-open:before{
+	content: "\f07c";
+}
+
+.fmc-nav-side .fmc-side-dropdown .fmc-side-subdropdown > li .fmc-folder-open:before{
+	content: "\f07b";
+}
+.fmc-nav-side .fmc-side-dropdown .fmc-side-subdropdown > li:hover .fmc-folder-open:before{
+	content: "\f07c";
+}
+
+
+/*logo*/
+.fmc-nav-logo{
+	float: left;
+}
+.fmc-nav-logo img{
+	width: 40px;
+	display: block;
+	padding-top: 5px;
+	opacity: 0.7;
+}
+.fmc-nav-link{
+	float: right;
+	line-height: 50px;
+}
+.fmc-nav-link-items{
+	margin: 0;
+	padding: 0;
+}
+.fmc-nav-link-items li{
+	list-style-type: none;
+	float: left;
+	padding: 0 16px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.fmc-nav-link-items li:hover{
+	box-shadow: inset 0 -5px teal;
+}
+.fmc-nav-link-items li a{
+	color: rgba(255,255,255,0.8);
+	text-decoration: none;
+}
+
+.fmc-nav-active{
+	box-shadow: inset 0 -5px teal;
+}
+
+.fmc-nav-toggle{
+	cursor:pointer;
+	padding: 0 16px;
+	line-height: 50px;
+	float: right;
+	color: rgba(255,255,255,0.8);
+	transition: 0.3s;
+}
+.fmc-nav-toggle:hover{
+	box-shadow: inset 0 -5px teal;
+}
+
+@media (min-width: 993px){
+	.fmc-nav-link{
+		display: block!important;
+	}
+	.fmc-nav-toggle{
+		display: none;
+	}
+}
+
+@media (max-width: 992px){
+	.fmc-nav-link{
+		position: fixed;
+		top:50px;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #222;
+		display: none;
+		overflow: auto;
+		padding-bottom: 100px;
+	}
+	.fmc-nav-link-items li{
+		float: none;
+		text-align: right;
+	}
+	.fmc-nav-link-items li:hover{
+		box-shadow: inset -5px 0 teal;
+	}
+	.fmc-nav-link-items li a{
+		display: block;
+	}
+	.fmc-nav-toggle{
+		display: block;
+	}
+}

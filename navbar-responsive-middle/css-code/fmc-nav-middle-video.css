@@ -67,6 +67,9 @@ Body : 16px Segoe UI, sans-serif by Core Framework
 	min-height: 100%;
 	width: auto;
 	height: auto;
+	background: url(../img/video-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .fmc-light{
 	position: absolute;

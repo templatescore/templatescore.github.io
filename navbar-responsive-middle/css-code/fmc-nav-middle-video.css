@@ -1,0 +1,294 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Navbar Responsive Middle Video
+Version           : 1.0
+Last change       : 08/10/2017 [Create Project]
+Framework css	  : Core Framework 3.0 Pop Green http://getcore.github.io 
+Framework js	  : jQuery v3.2.1 min.js 
+Plugin 1          : modernizr 3.5.0 (Custom Build)
+Plugin 2          : StyleFix 1.0.3 & PrefixFree 1.0.7
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. .fmc-video      : container full screen
+2. .fmc-light      : light transparent image
+3. .fmc-box        : container box max-width 600px
+4. .fmc-nav        : container navbar middle
+5. .fmc-img-middle : setting image middle (margin: auto)
+6. #line           : line  
+   
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+background transparent : rgba(0,0,0,0.8)
+background line	       : teal
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 16px Segoe UI, sans-serif by Core Framework
+-------------------------------------------------------------------*/
+.fmc-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.fmc-video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.fmc-video .fmc-video-setting{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	z-index: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+.fmc-light{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	overflow: hidden;
+}
+
+.fmc-img-middle img{
+	margin: auto;
+	display: block;
+	width: 44px;
+	padding-top: 8px;
+}
+.fmc-nav{
+	width: 502px;
+	padding:0;
+	list-style: none;
+	position: relative;
+	margin: auto;
+}
+.fmc-nav:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.fmc-nav li{
+	padding:0;
+	float: left;
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: rgba(255,255,255,0.6);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.fmc-nav li:hover{
+	cursor: pointer;
+	color: rgba(255,255,255,0.8);
+}
+#line{
+	float: left;
+	height: 3px;
+	width: 100px;
+	margin-left: 200px;
+	background-color: teal;
+	opacity: 0.5;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+@media (max-width: 600px){
+	.fmc-box{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	.fmc-nav{
+		width: 100%;
+		height: 100%;
+		padding:0;
+		list-style: none;
+		position: absolute;
+		margin: 0;
+	}
+	.fmc-nav li a{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+	}
+	.fmc-nav li:nth-child(1){
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+		height: 50%;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+		box-shadow: 0 0 1px rgba(0,0,0,0.8);
+	}
+	.fmc-nav li:nth-child(1):before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -100%;
+		left: -100%;
+		background-color: rgba(0,0,0,0.3);
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+	}
+	.fmc-nav li:nth-child(1):hover:before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	.fmc-nav li:nth-child(2){
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		height: 50%;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+		box-shadow: 0 0 1px rgba(0,0,0,0.8);
+	}
+	.fmc-nav li:nth-child(2):before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -100%;
+		right: -100%;
+		background-color: rgba(0,0,0,0.3);
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+	}
+	.fmc-nav li:nth-child(2):hover:before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+	}
+	.fmc-nav .fmc-img-middle{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+		z-index: 10;
+	}
+	.fmc-nav li:nth-child(4){
+		position: absolute;
+		left: 0%;
+		top: 50%;
+		width: 50%;
+		height: 50%;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+		box-shadow: 0 0 1px rgba(0,0,0,0.8);
+	}
+	.fmc-nav li:nth-child(4):before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: -100%;
+		left: -100%;
+		background-color: rgba(0,0,0,0.3);
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+	}
+	.fmc-nav li:nth-child(4):hover:before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+	}
+	.fmc-nav li:nth-child(5){
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 50%;
+		height: 50%;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+		box-shadow: 0 0 1px rgba(0,0,0,0.8);
+	}
+	.fmc-nav li:nth-child(5):before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: -100%;
+		right: -100%;
+		background-color: rgba(0,0,0,0.3);
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+	}
+	.fmc-nav li:nth-child(5):hover:before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		right: 0;
+		bottom: 0;
+	}
+	.fmc-nav li:hover{
+		color: rgba(255,255,255,0.8);
+	}
+	#line{
+		display: none;
+	}
+}

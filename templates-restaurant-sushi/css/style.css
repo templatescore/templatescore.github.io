@@ -1,0 +1,447 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : Templates Restaurant Sushi
+Version           : 1.0
+Last change       : 20/10/2017 [Create Project]
+Framework css	  : Core Framework 3.0 Pop Green http://getcore.github.io 
+Framework js	  : jQuery v3.2.1 min.js 
+Plugin            : modernizr 3.5.0 (Custom Build)
+Author            : Andika Chamberlin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body   : By Google Font (Amatic SC) Format ttf
+-------------------------------------------------------------------*/
+
+@font-face {
+	font-family: "Amatic SC";
+	src:url("../font/fonts-google/Amatic_SC/AmaticSC-Regular.ttf");
+}
+
+body{
+	font-family: "Amatic SC";
+}
+.fmc-scroll-top{
+	position: fixed;
+	right: 20px;
+	bottom: 16px;
+	z-index: 10;
+	width: 40px;
+	height: 0;
+	text-align: center;
+	line-height: 40px;
+	border: 1px dashed rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.2);
+	font-size: 20px;
+	overflow: hidden;
+	color: rgba(255,255,255,0.7);
+	visibility: hidden;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+.fmc-scroll-top-active{
+	visibility: visible;
+	height: 40px;
+	opacity: 1;
+}
+
+/*background*/
+.fmc-bg-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/sushi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+.fmc-light{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+/*text header*/
+.fmc-text-header{
+	position: absolute;
+	z-index: 2;
+	top: 250px;
+	left: 50%;
+	text-align: center;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-image: url(../img/sushi-text.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	background-attachment: fixed;
+}
+.fmc-text-header h1{
+	font-size: 300px;
+	color: rgba(0,0,0,0.1);
+}
+.fmc-text-header span{
+	font-size: 40px;
+	color: rgba(255,255,255,0.7);
+	border-bottom: 1px dashed rgba(255,255,255,0.9);
+}
+@media (max-width: 600px){
+	.fmc-text-header h1{
+		font-size: 100px;
+	}
+	.fmc-text-header span{
+		font-size: 24px;
+	}
+}
+
+/*navbar*/
+@media (max-width: 993px){
+	.fmc-nav-container{
+		width: 100%!important;
+		border: none!important;
+		margin: 0!important;
+	}
+	.fmc-nav li a{
+		border-bottom: 1px dashed rgba(255,255,255,0.7);
+	}
+	.fmc-nav-scroll{
+		width: 100%!important;
+	}
+}
+.fmc-nav-container{
+	position: relative;
+	top: 550px;
+	max-width: 950px;
+	height: 50px;
+	margin: auto;
+	border: 1px dashed rgba(255,255,255,0.7);
+}
+.fmc-sticky-nav{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.fmc-nav{
+	margin: 0;
+	padding: 0;
+}
+.fmc-nav:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.fmc-nav li{
+	list-style-type: none;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	color: rgba(255,255,255,0.9);
+	font-size: 28px;
+	width: 25%;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+@media (max-width: 400px){
+	.fmc-nav li{
+		width: 50%;
+	}
+}
+.fmc-nav li:hover{
+	background-color: rgba(255,255,255,0.2);
+}
+.fmc-active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/*content*/
+.fmc-content-container{
+	z-index: 2;
+	position: relative;
+	top: 600px;
+	max-width: 950px;
+	margin: auto;
+	margin-bottom: 100px;
+	border: 1px dashed rgba(255,255,255,0.7);
+}
+@media (max-width: 993px){
+	.fmc-content-container{
+		border: none;
+	}
+}
+/*home*/
+.fmc-home{
+	padding: 100px 20px;
+	color: rgba(255,255,255,0.9);
+	font-size: 26px;
+}
+/*box*/
+.fmc-box{
+	position: relative;
+	height: 200px;
+	border-top: none!important;
+	border-left: none!important;
+	border: 1px dashed rgba(255,255,255,0.7);
+	font-size: 26px;
+	color: rgba(255,255,255,0.9);
+	padding: 16px;
+	text-align: center;
+	overflow: hidden;
+}
+@media (max-width: 993px){
+	.fmc-box{
+		border: none;
+	}
+}
+/*font size*/
+.fmc-50px{
+	font-size: 50px;
+}
+
+/*row angle*/
+.fmc-home-angle-bottom{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	display: block;
+	margin: 0;
+	height: 200px;
+	overflow: hidden;
+}
+.fmc-polygon-home-bottom{
+	fill: rgba(0,0,0,0.3);
+}
+
+.fmc-about{
+	padding: 100px 20px;
+	color: rgba(255,255,255,0.9);
+	font-size: 24px;
+	background-color: rgba(0,0,0,0.3);
+	position: relative;
+}
+
+/*row angle*/
+.fmc-about-angle-bottom{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	display: block;
+	margin: 0;
+	height: 200px;
+	overflow: hidden;
+}
+.fmc-polygon-about-bottom{
+	fill: rgba(0,0,0,0.3);
+}
+
+.fmc-menu{
+	position: relative;
+	padding: 100px 20px;
+	color: rgba(255,255,255,0.9);
+	font-size: 24px;
+}
+.fmc-menu-header{
+	font-size: 50px;
+	border-bottom: 1px dashed rgba(255,255,255,0.7);
+}
+/*tab menu*/
+.fmc-tab {
+    overflow: hidden;
+    border: 1px dashed rgba(255,255,255,0.7);
+    background-color: rgba(0,0,0,0.2);
+}
+.fmc-tab button {
+    background-color: rgba(0,0,0,0.2);
+    float: left;
+    width: 25%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media (max-width: 600px){
+	.fmc-tab button{
+		width: 50%;
+	}
+}
+.fmc-tab button:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+.fmc-tab button.fmc-tab-active {
+    background-color: rgba(255,255,255,0.1);
+}
+.fmc-tabcontent {
+    display: none;
+    padding: 16px;
+    border: 1px dashed rgba(255,255,255,0.7);
+    border-top: none;
+    background-color: rgba(0,0,0,0.1);
+}
+.fmc-tabcontent-in {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/*card text*/
+.fmc-card-text{
+	background-color: rgba(0,0,0,0.1);
+	border: 1px dashed rgba(255,255,255,0.7);
+	padding: 6px 16px;
+	display: inline-block;
+}
+
+/*row angle*/
+.fmc-menu-angle-bottom{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	display: block;
+	margin: 0;
+	height: 200px;
+	overflow: hidden;
+}
+.fmc-polygon-menu-bottom{
+	fill: rgba(0,0,0,0.3);
+}
+
+.fmc-contact{
+	padding: 100px 0;
+	color: rgba(255,255,255,0.9);
+	font-size: 24px;
+	background-color: rgba(0,0,0,0.3);
+}
+.fmc-form-contact{
+	display: block;
+	padding: 0 20px;
+}
+.fmc-form-contact label{
+	display: block;
+	margin: 10px 0;
+}
+.fmc-form-contact input{
+	width: 100%;
+	display: block;
+	border: 1px dashed rgba(255,255,255,0.7);
+	background-color: rgba(0,0,0,0.1);
+	padding: 8px 16px;
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: rgba(255,255,255,0.9);
+}
+.fmc-form-contact input[type="submit"]{
+	margin: 30px 0;
+	cursor: pointer;
+}
+
+.fmc-description-contact{
+	display: block;
+	padding: 0 20px;
+}
+
+/*row angle*/
+.fmc-contact-angle-bottom{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	display: block;
+	margin: 0;
+	height: 200px;
+	overflow: hidden;
+}
+.fmc-polygon-contact-bottom{
+	fill: rgba(0,0,0,0.3);
+}
+
+/*footer*/
+.fmc-footer{
+	position: relative;
+	padding: 100px 16px;
+	color: rgba(255,255,255,0.9);
+	font-size: 26px;
+	text-align: center;
+}
+.fmc-topline{
+	border-top: 1px dashed rgba(255,255,255,0.7);
+	border-bottom: 1px dashed rgba(255,255,255,0.7);
+}
+
+/*jquery class*/
+.fmc-nav-scroll{
+	position: fixed;
+	top: 0;
+	width: 948px;
+	margin: auto;
+	z-index: 10;
+	background-color: rgba(0,0,0,0.5);
+}
+.fmc-scroll-show-home{
+	position: relative;
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
+	transition: 0.7s;
+	opacity: 0;
+}
+.fmc-scroll-show-about{
+	position: relative;
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
+	transition: 0.7s;
+	opacity: 0;
+}
+.fmc-scroll-show-menu{
+	position: relative;
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
+	transition: 0.7s;
+	opacity: 0;
+}
+.fmc-scroll-show-event{
+	position: relative;
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
+	transition: 0.7s;
+	opacity: 0;
+}
+.fmc-scroll-show-contact{
+	position: relative;
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
+	transition: 0.7s;
+	opacity: 0;
+}
+.fmc-scroll-show-active{
+	opacity: 1;
+}

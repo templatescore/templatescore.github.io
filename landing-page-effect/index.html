@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js" id="home"> <!--<![endif]-->
 
 <!-- head -->
 <head>
@@ -22,6 +22,9 @@
 	<link rel="stylesheet" href="css/loader.css">
 	<!-- style css -->
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="code-plugin-css/navbar/navbar.css">
+	<link rel="stylesheet" href="font/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<!-- modernizr development v3.5.0.min.js -->
 	<script src="js/modernizr-development-v3.5.0.min.js"></script>
 
@@ -45,16 +48,41 @@
 		</div>
 		<!-- End preload -->
 
+		<!-- navbar -->
+		<div class="navbar-container">
+		    <div class="navbar">
+		        <div class="navbar-logo">
+		            <a href="#home">
+		                <img src="img/icon-core.png" alt="icon">
+		            </a>
+		        </div>
+		        <div class="navbar-link" id="navbarLink">
+		            <ul class="navbar-link-items">
+		                <li><a href="#landingOpacity">Opacity</a></li>
+		                <li><a href="#landingOpacityCubicBezier">Cubic Bezier</a></li>
+		                <li><a href="#landingOpacityMoveVertical">Vertical</a></li>
+		                <li><a href="#landingOpacityMoveHorizontal">Horizontal</a></li>
+		                <li><a href="#landingOpacityTwoGo">Two Move</a></li>
+		                <li><a href="#landingGallery">Gallery</a></li>
+		            </ul>
+		        </div>
+		        <div class="navbar-toggle" id="navbarToggle">
+		            <div><i class="fa fa-bars"></i></div>
+		        </div>
+		    </div>
+		</div>    
+		<!-- end navbar -->
+
 		<!-- Code -->
-		<h3 class="center-align secpad-l">Landing Page Effect</h3>
-		<p class="layout-s center-align">is a scroll active opacity that is visible if we scroll in the specified area, many websites that use this effect, more details scroll this page.</p>
+		<h1 class="center-align" style="padding: 150px 16px 50px 16px;font-family: 'Indie Flower'">Landing Page Effect</h1>
+		<p class="center-align layout-s">is a scroll active opacity that is visible if we scroll in the specified area, many websites that use this effect, more details scroll this page.</p>
 
 		<!-- class layout by core framework -->
 		<div  class="layout-s">	
 			
 			<div class="fmc-landing-opacity" id="landingOpacity">
 				<p class="center-align">Landing Page Opacity</p>
-				<img src="img/1.jpg" alt="">
+				<img src="img/2.jpg" alt="">
 			</div>
 			<br>
 			<div class="fmc-landing-opacity-cubic-bezier" id="landingOpacityCubicBezier">
@@ -64,7 +92,7 @@
 			<br>
 			<div class="fmc-landing-opacity-move-vertical" id="landingOpacityMoveVertical">
 				<p class="center-align">Landing Page Opacity Move Vertical</p>
-				<img src="img/1.jpg" alt="">
+				<img src="img/2.jpg" alt="">
 			</div>
 			<br>
 			<div class="fmc-landing-opacity-move-horizontal" id="landingOpacityMoveHorizontal">
@@ -72,7 +100,7 @@
 				<img src="img/2.jpg" alt="">
 			</div>
 			<br>
-			<p class="center-align">Landing Page Opacity Move Two</p>
+			<p class="center-align section-g" id="landingOpacityTwoGo">Landing Page Opacity Move Two</p>
 			<div class="fmc-landing-opacity-two" id="landingOpacityTwo">
 				<div class="fmc-landing-opacity-two-item-1" id="fmcItem1">
 					<img src="img/3.jpg" alt="">
@@ -85,7 +113,7 @@
 		</div>
 
 		<br>
-		<div class="fmc-landing-opacity-gallery">
+		<div class="fmc-landing-opacity-gallery" id="landingGallery" style="padding: 100px 16px 400px 16px">
 			<!-- Class By Core Framework -->
 			<p class="center-align">Landing Page Opacity Gallery</p>
 			<br>
@@ -148,8 +176,32 @@
 <script>
 	if( !window.jQuery ) document.write('<script src="js/jquery.min.js"><\/script>');
 </script>
+<script src="code-plugin-js/navbar/navbar.js"></script>
 <!-- main js -->
 <script src="js/main.min.js"></script>
+<script>
+// scroll smooth
+"use strict";
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+    
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 600, function(){
+   
+        window.location.hash = hash;
+      
+      });
+    }
+  });
+});
+	
+</script>
 
 <!-- end script -->
 </html>

@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	$("#nav").onePageNav();
 
-	$("#fmcToggleBasic i").click(function(){
+	$("#fmcToggleBasic").click(function(){
 		$("#fmcNavBasicItems").toggleClass("fmc-nav-basic-items-active");
 		$("#fmNavBasicWindow").toggle();
 		$(this).toggleClass("fmc-nav-basic-toggle-active");

@@ -10,7 +10,7 @@ $(document).ready(function() {
 });
 
 $(document).on("click", function(event){
-	var fmcNavBasicToggle = $("#fmcToggleBasic");
+	var fmcNavBasicToggle = $("#fmcToggleBasic i");
 
     if(fmcNavBasicToggle !== event.target && !fmcNavBasicToggle.has(event.target).length){
         $("#fmcNavBasicItems").removeClass("fmc-nav-basic-items-active");

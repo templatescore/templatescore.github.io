@@ -1,0 +1,34 @@
+/*preview*/
+.fmc-preview-bg{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	border: 1px solid #000;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+.fmc-preview-bg:hover{
+	border-radius: 100px 0 100px 0;
+}
+.fmc-bg-black-161616{
+	background-color: #161616;
+}
+.fmc-pr-sec{
+	margin-top: 16px;
+}
+@media (max-width: 992px){
+	.fmc-pr-sec-r{
+		margin-bottom: 16px;
+	}
+}
+.fmc-margin-auto{
+	margin: auto;
+}
+.fmc-border-bottom{
+	-webkit-box-shadow: inset 0 -1px #000;
+	box-shadow: inset 0 -1px #000;
+}
+.fmc-preview-footer{
+
+}

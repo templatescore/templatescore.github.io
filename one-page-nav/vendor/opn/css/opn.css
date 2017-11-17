@@ -56,20 +56,22 @@
 	display: block;
 }
 .fmc-nav-basic-toggle{
-	color: #fefefe;
+	float: right;
+}
+.fmc-nav-basic-toggle i{
 	line-height: 50px;
 	padding: 0 16px;
+	color: #fefefe;
 	font-size: 24px;
-	float: right;
 	cursor: pointer;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
 }
-.fmc-nav-basic-toggle:hover{
+.fmc-nav-basic-toggle i:hover{
 	color: teal;
 }
-.fmc-nav-basic-toggle-active{
+.fmc-nav-basic-toggle-active i{
 	color: teal;
 }
 @media (min-width: 992px){

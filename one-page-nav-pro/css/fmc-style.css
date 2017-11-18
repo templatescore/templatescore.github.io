@@ -7,11 +7,18 @@
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
+	color: #fefefe!important;
 }
 .fmc-preview-bg:hover{
 	border-radius: 100px 0 100px 0;
 }
 .fmc-bg-black-161616{
+	background-color: #161616;
+	color: #fefefe!important;
+	font-size: 30px;
+	padding: 16px;
+}
+.fmc-bg-black-index{
 	background-color: #161616;
 }
 .fmc-pr-sec{
@@ -30,5 +37,5 @@
 	box-shadow: inset 0 -1px #000;
 }
 .fmc-preview-footer{
-
+	padding: 16px;
 }

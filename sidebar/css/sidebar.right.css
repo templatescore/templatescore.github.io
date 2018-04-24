@@ -1,0 +1,279 @@
+/*------------------------------------------------------------------
+
+[Master Style]
+
+Code Name     : Sidebar Multi Level (right)
+Version       : 1.0
+Framework     : iCore For Developer // getcore.github.io
+Author        : Andika Chamberlin // andikachamberlin.github.io
+Credit        : taniarascia.com
+
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html,
+body{
+	height: 100%;
+}
+
+body {
+	font-family: 'Lato', 'Segoe UI', sans-serif;
+}
+
+/*sidebar btn*/
+.i-sidebar-btn{
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	z-index: 9997;
+}
+
+.i-sidebar-btn i{
+	padding: 16px;
+	color: #fff;
+	font-size: 28px;
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.i-sidebar-btn i:hover{
+	color: #888;
+}
+
+/*sidebar*/
+.i-sidebar{
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 0;
+	overflow-x: hidden;
+	white-space: nowrap;
+	background-color: #171717;
+	overflow-y: auto;
+	z-index: 9998;
+	color: #f1f1f1;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.i-sidebar.i-sidebar-active{
+	width: 220px;
+}
+
+@media (min-width: 601px){
+	.i-sidebar.i-sidebar-active{
+		width: 270px;
+	}
+}
+
+.i-sidebar::-webkit-scrollbar {
+  	width: 7px; 
+  	height: 7px;
+}
+
+.i-sidebar::-webkit-scrollbar-thumb{ 
+  	background-color: rgba(255,255,255,0.2);
+}
+
+	/*sidebar header*/
+	.i-sidebar-header{
+		position: relative;
+		height: 200px;
+		background-image: url(../img/mosaic.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+		        box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+	}
+
+	.i-sidebar-header:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.3);
+	}
+
+	/*sidebar items*/
+	.i-sidebar-items{
+		position: relative;
+	}
+
+		/*sidebar accordion*/
+		.i-acc-list {
+		  	list-style: none;
+		  	margin: 0;
+		  	padding: 0;
+		}
+
+		.i-acc-toggle{
+		  	position: relative;
+		}
+
+		.i-acc-list li a{
+		  	display: block;
+		  	padding: 0 32px 0 16px;
+		  	line-height: 50px;
+		  	text-decoration: none;
+		  	overflow: hidden;
+		  	text-overflow: ellipsis;
+		  	white-space: nowrap;
+		  	cursor: pointer;
+		  	position: relative;
+		}
+
+		.i-acc-list li a.i-acc-active:before,
+		.i-acc-list li a.i-acc-active:after{
+			background-color: teal;
+			height: 50%;
+		}
+
+		.i-acc-list li a:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 0;
+			width: 5px;
+			-webkit-transition: 0.3s;
+			transition: 0.3s;
+			background-color: teal;
+		}
+
+		.i-acc-list li a:after{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 0;
+			width: 5px;
+			-webkit-transition: 0.3s;
+			transition: 0.3s;
+			background-color: teal;
+		}
+
+		.i-acc-list li a:hover:before,
+		.i-acc-list li a:hover:after{
+			height: 50%;
+		}
+
+		.i-acc-dropdown {
+		  	display: none;
+		  	background-color: #222;
+		}
+
+		.i-acc-sub-1 li a{
+			padding-left: 24px;
+		}
+
+		.i-acc-sub-2 li a{
+			padding-left: 32px;
+		}
+
+		.i-acc-sub-3 li a{
+			padding-left: 42px;
+		}
+		
+		.i-acc-arrow{
+		  	position: absolute;
+		  	right: 16px;
+		  	top: 16px;
+		  	-webkit-transition: 0.3s;
+		  	transition: 0.3s;
+		  	font-size: 16px;
+		}
+
+		.i-acc-arrow-active{
+		  	-webkit-transform: rotate(180deg);
+		  	transform: rotate(180deg);
+		}
+
+/*window close*/
+.i-sidebar-window{
+	position: fixed;
+	z-index: 9997;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0,0,0,0.8);
+	overflow: hidden;
+}
+
+/*header*/
+.i-header{
+	position: relative;
+	height: 100%;
+	background-image: url(../img/mosaic.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.i-header:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.8);
+}
+
+	/*hero*/
+	.i-position-middle{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		        transform: translate(-50%,-50%);
+		z-index: 10;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+	}
+
+	.i-position-middle span a{
+		color: crimson;
+	}
+
+	.i-position-middle h1{
+		text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+	}
+
+	.i-position-middle h1{
+		margin-bottom: 16px;
+	}
+
+	@media (max-width: 600px){
+		.i-position-middle h1{
+			font-size: 25px;
+			margin-bottom: 8px;
+		}
+	}
+
+	.i-layout{
+		max-width: 600px;
+		margin: auto;
+	}
+
+	.i-layout a{
+		padding: 12px 16px;
+		display: block;
+		background-color: rgba(255,255,255,0.1);
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+	}
+
+	.i-layout a:hover{
+		background-color: rgba(255,255,255,0.2);
+	}
+/*# sourceMappingURL=sidebar.right.css.map */

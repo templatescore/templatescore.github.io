@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title -->
+    <title>Navbar Side Multi level Pure CSS</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/icore.png" type="image/x-icon">
+    <!-- icore.css -->
+    <link rel="stylesheet" href="css/icore.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.side.minify.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<!-- end head -->
+
+<!-- body -->
+<body>
+
+    <!-- nav -->
+    <nav class="i-nav" id="iNav">
+        <!-- nav layout -->
+        <div class="i-nav-layout">
+
+            <!-- mobile -->
+            <label for="iMobile" id="iToggle">Logo
+                <span class="i-drop-icon">
+                    <i class="i-hamburger"></i>
+                </span>
+            </label>
+
+            <input type="checkbox" id="iMobile">
+            <!-- /mobile -->
+            
+            <!-- main-menu -->
+            <ul class="i-main-nav">
+                <!-- link right -->
+                <li class="i-nav-right"><a href="#">Link</a></li>
+                <li class="i-nav-right"><a href="#">Link</a></li>
+
+                <!-- link left -->
+                <li class="i-nav-logo"><a href="#"><strong>Logo</strong></a></li>
+                <li><a href="#">Link</a></li>
+                <!-- dropdown -->
+                <li><a>Dropdown
+                        <span class="i-drop-icon">
+                            <i class="i-arrow-down"></i>
+                        </span>
+                    </a>
+                    <label class="i-drop-icon" for="iDropdown1">
+                        <i class="i-arrow-down i-arrow-down-mobile"></i>
+                    </label>
+                    <input type="checkbox" id="iDropdown1">
+                    
+                    <ul class="i-dropdown">
+                        <li><a href="#">Item 1.1</a></li>
+                        <li><a href="#">Item 1.2</a></li>
+                        <li><a href="#">Item 1.3</a></li>
+                        <li><a href="#">Item 1.4</a></li>
+                    </ul>
+                </li>
+                <!-- dropdown level 2 -->
+                <li><a>2-level DD 
+                        <span class="i-drop-icon">
+                            <i class="i-arrow-down"></i>
+                        </span>
+                    </a>
+                    <label class="i-drop-icon" for="iDropdown2">
+                        <i class="i-arrow-down i-arrow-down-mobile"></i>
+                    </label>
+                    <input type="checkbox" id="iDropdown2">
+                    
+                    <ul class="i-dropdown">
+                        <li><a href="#">Item 2.1</a></li>
+                        <li><a href="#">Item 2.2 Test Overflow dot dot dot
+                                <span class="i-drop-icon">
+                                    <i class="i-arrow-right"></i>
+                                </span>
+                            </a>
+                            <label class="i-drop-icon" for="iDropdown2Sub">
+                                <i class="i-arrow-down i-arrow-down-mobile"></i>
+                            </label>
+                            <input type="checkbox" id="iDropdown2Sub">
+                            
+                            <ul class="i-dropdown">
+                                <li><a href="#">Item 2.2.1</a></li>
+                                <li><a href="#">Item 2.2.2</a></li>
+                                <li><a href="#">Item 2.2.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item 2.3</a></li>
+                    </ul>
+                </li>
+                <!-- multiple levels -->
+                <li><a>Multiple Levels
+                        <span class="i-drop-icon">
+                            <i class="i-arrow-down"></i>
+                        </span>
+                    </a>
+                    <label class="i-drop-icon" for="iDropdown3">
+                        <i class="i-arrow-down i-arrow-down-mobile"></i>
+                    </label>
+                    <input type="checkbox" id="iDropdown3">
+    
+                    <ul class="i-dropdown">
+                        <li><a>3.1 Test Overflow dot dot dot
+                                <span class="i-drop-icon">
+                                    <i class="i-arrow-right"></i>
+                                </span>
+                            </a>
+                            <label class="i-drop-icon" for="iDropdown3Sub1">
+                                <i class="i-arrow-down i-arrow-down-mobile"></i>
+                            </label>
+                            <input type="checkbox" id="iDropdown3Sub1">
+                            
+                            <ul class="i-dropdown">
+                                <li><a href="">3.1.1</a></li>
+                                <li><a href="">3.1.2</a></li>
+                                <li><a href="">3.1.3</a></li>
+                                <li><a href="">3.1.4</a></li>
+                            </ul>
+                        </li>
+                        <li><a>3.2
+                                <span class="i-drop-icon">
+                                    <i class="i-arrow-right"></i>
+                                </span>
+                            </a>
+                            <label class="i-drop-icon" for="iDropdown3Sub2">
+                                <i class="i-arrow-down i-arrow-down-mobile"></i>
+                            </label>
+                            <input type="checkbox" id="iDropdown3Sub2">
+        
+                            <ul class="i-dropdown">
+                                <li><a href="">3.2.1</a></li>
+                                <li><a href="">3.2.2</a></li>
+                                <li><a href="">3.2.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a>3.3
+                                <span class="i-drop-icon">
+                                    <i class="i-arrow-right"></i>
+                                </span>
+                            </a>
+                            <label class="i-drop-icon" for="iDropdown3Sub3">
+                                <i class="i-arrow-down i-arrow-down-mobile"></i>
+                            </label>
+                            <input type="checkbox" id="iDropdown3Sub3">
+                            
+                            <ul class="i-dropdown">
+                                <li><a href="">3.3.1</a></li>
+                                <li><a href="">3.3.2</a></li>
+                                <li><a href="">3.2.2</a></li>
+                                <li><a href="">3.3.4</a></li>
+                                <li><a href="">3.3.5</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- megadropdown -->
+                <li><a>Mega Dropdown
+                        <span class="i-drop-icon">
+                            <i class="i-arrow-down"></i>
+                        </span>
+                    </a>
+                    <label class="i-drop-icon" for="iMegaDropdown1">
+                        <i class="i-arrow-down i-arrow-down-mobile"></i>
+                    </label>
+                    <input type="checkbox" id="iMegaDropdown1">
+                    
+                    <div class="i-dropdown i-megadropdown">
+                        <div class="row">
+                            <div class="column l3 m6 s12">
+                                <ul>
+                                    <li><a>Header</a></li>
+                                    <li><a href="#">Item 1.1</a></li>
+                                    <li><a href="#">Item 1.2</a></li>
+                                    <li><a href="#">Item 1.3</a></li>
+                                    <li><a href="#">Item 1.4</a></li>
+                                </ul>
+                            </div>
+                            <div class="column l3 m6 s12">
+                                <ul>
+                                    <li><a>Header</a></li>
+                                    <li><a href="#">Item 1.1</a></li>
+                                    <li><a href="#">Item 1.2</a></li>
+                                    <li><a href="#">Item 1.3</a></li>
+                                    <li><a href="#">Item 1.4</a></li>
+                                </ul>
+                            </div>
+                            <div class="column l3 m6 s12">
+                                <ul>
+                                    <li><a>Header</a></li>
+                                    <li><a href="#">Item 1.1</a></li>
+                                    <li><a href="#">Item 1.2</a></li>
+                                    <li><a href="#">Item 1.3</a></li>
+                                    <li><a href="#">Item 1.4</a></li>
+                                </ul>
+                            </div>
+                            <div class="column l3 m6 s12">
+                                <ul>
+                                    <li><a>Header</a></li>
+                                    <li><a href="#">Item 1.1</a></li>
+                                    <li><a href="#">Item 1.2</a></li>
+                                    <li><a href="#">Item 1.3</a></li>
+                                    <li><a href="#">Item 1.4 Test Overflow dot dot dot dot dot</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- /main menu -->
+        </div>
+        <!-- /nav layout -->
+    </nav>  
+    <!-- /nav -->
+
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title -->
+    <title>Template Designer Live</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/icore.png" type="image/x-icon">
+    <!-- icore.css -->
+    <link rel="stylesheet" href="css/icore.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/template.css">
+    <!-- element -->
+    <link rel="stylesheet" href="css/element.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<!-- end head -->
+
+<!-- body -->
+<body>
+
+    <!-- template design container -->
+
+    <div class="i-template-container">
+       
+       <!-- template -->
+        <div class="i-template" id="i-template">
+       
+            <!-- tab -->
+            <div class="i-template-header">
+                <h3>Template Designer Live</h3>
+            </div>
+            <div class="i-tabs-container">
+                <ul class="i-tabs">
+                    <li class="i-tab-link i-current" data-tab="i-tab-1">
+                        <a href="#i-scroll-navbar">Navbar</a>
+                    </li>
+                    <li class="i-tab-link" data-tab="i-tab-2">
+                        <a href="#i-scroll-header">Header</a>
+                    </li>
+                    <li class="i-tab-link" data-tab="i-tab-3">
+                        <a href="#i-scroll-content">Content</a>
+                    </li>
+                    <li class="i-tab-link" data-tab="i-tab-4">
+                        <a href="#i-scroll-footer">Footer</a>
+                    </li>
+                </ul>
+                
+                <div class="i-tabs-layout">
+                    <div id="i-tab-1" class="i-tab-content i-current">
+                        <div class="i-tab-column">
+                            <p class="i-tab-column--header">Height</p>
+                            <div class="i-tab-column-input">
+                                <input class="i-tab-column--range-slider" type="range" min="50" max="100" value="70" oninput="nav(this.value)" onchange="nav(this.value)" />
+                                <span>
+                                    Min
+                                </span>
+                                <span class="i-right-align">
+                                    Maxs
+                                </span>
+                            </div>
+                            <div class="i-tab-column--value">
+                                Height : <span id="i-change-nav-value">70px</span>
+                            </div>
+                        </div>
+                        <div class="i-tab-column">
+                            <p class="i-tab-column--header">Transparent</p>
+                            <div class="i-tab-column-input">
+                                <input class="i-tab-column--range-slider" type="range" min="0" max="100" value="100" oninput="navTransparent(this.value)" onchange="navTransparent(this.value)" />
+                                <span>
+                                    Min
+                                </span>
+                                <span class="i-right-align">
+                                    Maxs
+                                </span>
+                            </div>
+                            <div class="i-tab-column--value">
+                                Transparent : <span class="" id="i-change-transparent-value">100%</span>
+                            </div>
+                        </div>
+                        <div class="i-tab-column i-tab-color">
+                            <p class="i-tab-column--header">Color</p>
+                            <div class="i-tab-column--color-click i-color-nav">
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black1" data-value="#555"></span>
+                                    <span class="i-color i-white1" data-value="#aaa"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black2" data-value="#444"></span>
+                                    <span class="i-color i-white2" data-value="#bbb"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black3" data-value="#333"></span>
+                                    <span class="i-color i-white3" data-value="#ccc"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black4" data-value="#292929"></span>
+                                    <span class="i-color i-white4" data-value="#ddd"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black5" data-value="#191919"></span>
+                                    <span class="i-color i-white5" data-value="#eee"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="i-tab-column">
+                            <p class="i-tab-column--header">Background Color</p>
+                            <div class="i-tab-column--color-click i-background-nav">
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-pastel1" data-value="#e1f7d5"></span>
+                                    <span class="i-color i-pastel2" data-value="#ffbdbd"></span>
+                                    <span class="i-color i-pastel3" data-value="#c9c9ff"></span>
+                                    <span class="i-color i-pastel4" data-value="#ffffff"></span>
+                                    <span class="i-color i-pastel5" data-value="#f1cbff"></span>
+                                    <span class="i-color-desc">Pastel</span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-rainbow1" data-value="#ee4035"></span>
+                                    <span class="i-color i-rainbow2" data-value="#f37736"></span>
+                                    <span class="i-color i-rainbow3" data-value="#fdf498"></span>
+                                    <span class="i-color i-rainbow4" data-value="#7bc043"></span>
+                                    <span class="i-color i-rainbow5" data-value="#0392cf"></span>
+                                    <span class="i-color-desc">Rainbow</span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-gryffindor1" data-value="#740001"></span>
+                                    <span class="i-color i-gryffindor2" data-value="#ae0001"></span>
+                                    <span class="i-color i-gryffindor3" data-value="#eeba30"></span>
+                                    <span class="i-color i-gryffindor4" data-value="#d3a625"></span>
+                                    <span class="i-color i-gryffindor5" data-value="#000000"></span>
+                                    <span class="i-color-desc">Gryffindor</span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-beach1" data-value="#96ceb4"></span>
+                                    <span class="i-color i-beach2" data-value="#ffeead"></span>
+                                    <span class="i-color i-beach3" data-value="#ff6f69"></span>
+                                    <span class="i-color i-beach4" data-value="#ffcc5c"></span>
+                                    <span class="i-color i-beach5" data-value="#88d8b0"></span>
+                                    <span class="i-color-desc">Beach</span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-turquoise1" data-value="#58a7aa"></span>
+                                    <span class="i-color i-turquoise2" data-value="#35698c"></span>
+                                    <span class="i-color i-turquoise3" data-value="#2f5d65"></span>
+                                    <span class="i-color i-turquoise4" data-value="#6bd2e0"></span>
+                                    <span class="i-color i-turquoise5" data-value="#aaeff3"></span>
+                                    <span class="i-color-desc">Turquoise Sea</span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="i-tab-column i-tab-column-font">
+                            <p class="i-tab-column--header">Font</p>
+                            <form class="i-tab-column-form" id="i-font-form-navbar">
+                                <select class="i-font-family">
+                                    <option>Font Family</option> 
+                                    <option value="Arial">Arial</option>
+                                    <option value="Verdana">Verdana </option>
+                                    <option value="Impact">Impact </option>
+                                    <option value="Comic Sans MS">Comic Sans MS</option>
+                                    <option value="Times New Roman">Times New Roman</option>
+                                    <option value="Courier New">Courier New</option>
+                                </select>
+                                
+                                <select class="i-font-size">
+                                    <option>Size</option> 
+                                    <option value="12">12px</option>
+                                    <option value="16">16px</option>
+                                    <option value="18">18px</option>
+                                    <option value="20">20px</option>
+                                    <option value="24">24px</option>
+                                    <option value="30">30px</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="i-tab-2" class="i-tab-content">
+                        <div class="i-tab-column">
+                            <p class="i-tab-column--header">Height</p>
+                            <div class="i-tab-column-input">
+                                <input class="i-tab-column--range-slider" type="range" min="200" max="800" value="300" oninput="header(this.value)" onchange="header(this.value)" />
+                                <span>
+                                    Min
+                                </span>
+                                <span class="i-right-align">
+                                    Maxs
+                                </span>
+                            </div>
+                            <div class="i-tab-column--value">
+                                Height : <span id="i-change-header-value">300px</span>
+                            </div>
+                        </div>
+                        <div class="i-tab-column">
+                            <p class="i-tab-column--header">Blur</p>
+                            <div class="i-tab-column-input">
+                                <input class="i-tab-column--range-slider" type="range" min="0" max="50" value="0" oninput="headerBlur(this.value)" onchange="headerBlur(this.value)" />
+                                <span>
+                                    Min
+                                </span>
+                                <span class="i-right-align">
+                                    Maxs
+                                </span>
+                            </div>
+                            <div class="i-tab-column--value">
+                                Blur : <span id="i-change-header-blur-value">0px</span>
+                            </div>
+                        </div>
+                        <div class="i-tab-column i-tab-color">
+                            <p class="i-tab-column--header">Color</p>
+                            <div class="i-tab-column--color-click i-color-header">
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black1" data-value="#555"></span>
+                                    <span class="i-color i-white1" data-value="#aaa"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black2" data-value="#444"></span>
+                                    <span class="i-color i-white2" data-value="#bbb"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black3" data-value="#333"></span>
+                                    <span class="i-color i-white3" data-value="#ccc"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black4" data-value="#292929"></span>
+                                    <span class="i-color i-white4" data-value="#ddd"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black5" data-value="#191919"></span>
+                                    <span class="i-color i-white5" data-value="#eee"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="i-tab-column i-tab-column-header-upload">
+                            <p class="i-tab-column--header">Upload Image</p>
+                            <input id="i-background_input" type="file"/>
+                            <button id="i-upload_button">Upload</button>
+                        </div>
+                        <div class="i-tab-column i-tab-column-font">
+                            <p class="i-tab-column--header">Font</p>
+                            <form class="i-tab-column-form" id="i-font-form-header">
+                                <select class="i-font-family">
+                                    <option>Font Family</option> 
+                                    <option value="Arial">Arial</option>
+                                    <option value="Verdana">Verdana </option>
+                                    <option value="Impact">Impact </option>
+                                    <option value="Comic Sans MS">Comic Sans MS</option>
+                                    <option value="Times New Roman">Times New Roman</option>
+                                    <option value="Courier New">Courier New</option>
+                                </select>
+                                
+                                <select class="i-font-size">
+                                    <option>Size</option> 
+                                    <option value="30">30px</option>
+                                    <option value="50">50px</option>
+                                    <option value="80">80px</option>
+                                    <option value="90">90px</option>
+                                    <option value="100">100px</option>
+                                    <option value="150">150px</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="i-tab-3" class="i-tab-content">
+                        <div class="i-tab-column">
+                            <p class="i-tab-column--header">Width</p>
+                            <div class="i-tab-column-input">
+                                <input class="i-tab-column--range-slider" type="range" min="70" max="100" value="80" oninput="content(this.value)" onchange="content(this.value)" />
+                                <span>
+                                    Min
+                                </span>
+                                <span class="i-right-align">
+                                    Maxs
+                                </span>
+                            </div>
+                            <div class="i-tab-column--value">
+                                Width : <span id="i-change-content-value">80%</span>
+                            </div>
+                        </div>
+                        <div class="i-tab-column i-tab-color">
+                            <p class="i-tab-column--header">Color</p>
+                            <div class="i-tab-column--color-click i-color-content">
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black1" data-value="#555"></span>
+                                    <span class="i-color i-white1" data-value="#aaa"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black2" data-value="#444"></span>
+                                    <span class="i-color i-white2" data-value="#bbb"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black3" data-value="#333"></span>
+                                    <span class="i-color i-white3" data-value="#ccc"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black4" data-value="#292929"></span>
+                                    <span class="i-color i-white4" data-value="#ddd"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black5" data-value="#191919"></span>
+                                    <span class="i-color i-white5" data-value="#eee"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="i-tab-column i-tab-column-font">
+                            <p class="i-tab-column--header">Font</p>
+                            <form class="i-tab-column-form" id="i-font-form-content">
+                                <select class="i-font-family">
+                                    <option>Font Family</option> 
+                                    <option value="Arial">Arial</option>
+                                    <option value="Verdana">Verdana </option>
+                                    <option value="Impact">Impact </option>
+                                    <option value="Comic Sans MS">Comic Sans MS</option>
+                                    <option value="Times New Roman">Times New Roman</option>
+                                    <option value="Courier New">Courier New</option>
+                                </select>
+                                
+                                <select class="i-font-size">
+                                    <option>Size</option> 
+                                    <option value="12">12px</option>
+                                    <option value="16">16px</option>
+                                    <option value="18">18px</option>
+                                    <option value="20">20px</option>
+                                    <option value="24">24px</option>
+                                    <option value="30">30px</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="i-tab-4" class="i-tab-content">
+                        <div class="i-tab-column">
+                            <p class="i-tab-column--header">Height</p>
+                            <div class="i-tab-column-input">
+                                <input class="i-tab-column--range-slider" type="range" min="100" max="500" value="200" oninput="footer(this.value)" onchange="footer(this.value)" />
+                                <span>
+                                    Min
+                                </span>
+                                <span class="i-right-align">
+                                    Maxs
+                                </span>
+                            </div>
+                            <div class="i-tab-column--value">
+                                Height : <span id="i-change-footer-value">200px</span>
+                            </div>
+                        </div>
+                        <div class="i-tab-column i-tab-color">
+                            <p class="i-tab-column--header">Color</p>
+                            <div class="i-tab-column--color-click i-color-footer">
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black1" data-value="#555"></span>
+                                    <span class="i-color i-white1" data-value="#aaa"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black2" data-value="#444"></span>
+                                    <span class="i-color i-white2" data-value="#bbb"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black3" data-value="#333"></span>
+                                    <span class="i-color i-white3" data-value="#ccc"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black4" data-value="#292929"></span>
+                                    <span class="i-color i-white4" data-value="#ddd"></span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-black5" data-value="#191919"></span>
+                                    <span class="i-color i-white5" data-value="#eee"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="i-tab-column">
+                            <p class="i-tab-column--header">Background Color</p>
+                            <div class="i-tab-column--color-click i-background-footer">
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-pastel1" data-value="#e1f7d5"></span>
+                                    <span class="i-color i-pastel2" data-value="#ffbdbd"></span>
+                                    <span class="i-color i-pastel3" data-value="#c9c9ff"></span>
+                                    <span class="i-color i-pastel4" data-value="#ffffff"></span>
+                                    <span class="i-color i-pastel5" data-value="#f1cbff"></span>
+                                    <span class="i-color-desc">Pastel</span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-rainbow1" data-value="#ee4035"></span>
+                                    <span class="i-color i-rainbow2" data-value="#f37736"></span>
+                                    <span class="i-color i-rainbow3" data-value="#fdf498"></span>
+                                    <span class="i-color i-rainbow4" data-value="#7bc043"></span>
+                                    <span class="i-color i-rainbow5" data-value="#0392cf"></span>
+                                    <span class="i-color-desc">Rainbow</span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-gryffindor1" data-value="#740001"></span>
+                                    <span class="i-color i-gryffindor2" data-value="#ae0001"></span>
+                                    <span class="i-color i-gryffindor3" data-value="#eeba30"></span>
+                                    <span class="i-color i-gryffindor4" data-value="#d3a625"></span>
+                                    <span class="i-color i-gryffindor5" data-value="#000000"></span>
+                                    <span class="i-color-desc">Gryffindor</span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-beach1" data-value="#96ceb4"></span>
+                                    <span class="i-color i-beach2" data-value="#ffeead"></span>
+                                    <span class="i-color i-beach3" data-value="#ff6f69"></span>
+                                    <span class="i-color i-beach4" data-value="#ffcc5c"></span>
+                                    <span class="i-color i-beach5" data-value="#88d8b0"></span>
+                                    <span class="i-color-desc">Beach</span>
+                                </div>
+                                <div class="i-tab-column--color-part">
+                                    <span class="i-color i-turquoise1" data-value="#58a7aa"></span>
+                                    <span class="i-color i-turquoise2" data-value="#35698c"></span>
+                                    <span class="i-color i-turquoise3" data-value="#2f5d65"></span>
+                                    <span class="i-color i-turquoise4" data-value="#6bd2e0"></span>
+                                    <span class="i-color i-turquoise5" data-value="#aaeff3"></span>
+                                    <span class="i-color-desc">Turquoise Sea</span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="i-tab-column i-tab-column-font">
+                            <p class="i-tab-column--header">Font</p>
+                            <form class="i-tab-column-form" id="i-font-form-footer">
+                                <select class="i-font-family">
+                                    <option>Font Family</option> 
+                                    <option value="Arial">Arial</option>
+                                    <option value="Verdana">Verdana </option>
+                                    <option value="Impact">Impact </option>
+                                    <option value="Comic Sans MS">Comic Sans MS</option>
+                                    <option value="Times New Roman">Times New Roman</option>
+                                    <option value="Courier New">Courier New</option>
+                                </select>
+                                
+                                <select class="i-font-size">
+                                    <option>Size</option> 
+                                    <option value="12">12px</option>
+                                    <option value="16">16px</option>
+                                    <option value="18">18px</option>
+                                    <option value="20">20px</option>
+                                    <option value="24">24px</option>
+                                    <option value="30">30px</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end tab container -->
+
+        </div>
+        <!-- end template -->
+        
+        <!-- tempate btn -->
+        <div class="i-template-btn" id="i-template-btn">
+            <div class="i-template-btn-icon"></div>
+        </div>
+        <!-- end template btn -->
+
+    </div>
+    
+    <!-- end template design container -->
+
+
+
+
+    <!-- page  -->
+    <div class="i-page" id="i-page">
+
+        <div id="i-scroll-navbar">
+            <!-- navbar -->
+            <div class="i-nav" id="i-change-nav">
+                <div class="i-nav-layout">
+                    <div class="i-nav-logo">
+                        <a href="#">
+                            <img src="img/icore.png" alt="icon">
+                        </a>
+                    </div>
+                    <div class="i-nav-items">
+                        <ul class="i-nav-items-list">
+                            <li class="i-nav-active"><a href="#">Home</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="i-nav-toggle">
+                        <i class="fa fa-th"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+
+        <!-- header -->
+        <div id="i-scroll-header">
+            <div class="i-header-container" id="i-change-header">
+                <div class="i-header" id="i-change-header-all">
+                    
+                </div>
+                <div class="i-position-middle">
+                    <h1 id="i-change-header-hero">Header</h1>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!-- content -->
+        <div id="i-scroll-content">
+            <div class="i-content i-center-align" id="i-change-content">
+                <div class="i-row i-grid">
+                    <div class="i-column i-grid i-l3 i-m6 i-s12">
+                        <i class="fa fa-question-circle"></i>
+                        <p>Support Product</p>
+                    </div>
+                    <div class="i-column i-grid i-l3 i-m6 i-s12">
+                        <i class="fa fa-book"></i>
+                        <p>Documentation</p>
+                    </div>
+                    <div class="i-column i-grid i-l3 i-m6 i-s12">
+                        <i class="fa fa-sliders"></i>
+                        <p>Range Slider</p>
+                    </div>
+                    <div class="i-column i-grid i-l3 i-m6 i-s12">
+                        <i class="fa fa-paint-brush"></i>
+                        <p>iCore</p>
+                    </div>
+                </div>
+                <p class="i-content-desc">Template Designer Live is a web demo application for direct adjustments</p>
+            </div>
+        </div>
+        <!-- end content -->
+
+        <!-- footer -->
+        <footer id="i-scroll-footer">
+            <div class="i-footer i-center-align" id="i-change-footer">
+                <div class="i-position-middle">
+                    By <a href="http://andikachamberlin.github.io"></a>andikachamberlin
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    
+    </div>
+
+    <!-- end page -->
+    
+
+    <!-- script -->
+
+    <!-- jquery v3.2.1.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/element.js"></script>
+    <script src="js/picker.js"></script>
+    <script src="js/font.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/range.slider.js"></script>
+
+    <!-- end script -->
+
+</body>
+</html>

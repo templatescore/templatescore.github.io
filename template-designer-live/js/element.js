@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".i-nav-toggle").click(function(){$(this).toggleClass("i-nav-toggle-active"),$(".i-nav-items").slideToggle(300)})});

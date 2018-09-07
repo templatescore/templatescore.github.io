@@ -1,0 +1,1 @@
+"use strict";$(window).on("load",function(){$("#i-load-landing").addClass("i-load-landing-active")});

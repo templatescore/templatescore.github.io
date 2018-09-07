@@ -1,0 +1,1 @@
+"use strict";$(function(){var o=$("#i-parallax"),r=$(window);r.on("scroll",function(){var t=r.scrollTop();o.css({transform:"rotateY("+t/30+"deg)",width:100+t/40+"%"})})});

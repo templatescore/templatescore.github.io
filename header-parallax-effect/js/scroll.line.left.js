@@ -1,0 +1,1 @@
+"use strict";$(function(){var i=$("#i-line"),h=$(window),t=0,e=0;h.on("scroll resize",function(){var n=100*h.scrollTop()/($("html").height()-h.height()),o=(h.height()-2*t-e)/100*n+e;i.css("height",o)})});

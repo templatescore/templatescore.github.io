@@ -1,0 +1,1 @@
+"use strict";$(function(){$(window).scroll(function(){var s=$(this).scrollTop();$("#i-parallax").css({top:0+s/50+"%",transition:"1s"})})});

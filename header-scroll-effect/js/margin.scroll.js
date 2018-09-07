@@ -1,0 +1,1 @@
+"use strict";$(function(){$(window).scroll(function(){var i=$(this).scrollTop();$("#i-parallax").css({margin:0+i/3+"px"})})});

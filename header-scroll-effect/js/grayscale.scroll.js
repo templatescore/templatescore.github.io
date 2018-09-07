@@ -1,0 +1,1 @@
+"use strict";$(function(){$(window).scroll(function(){var l=$(this).scrollTop();$("#i-parallax").css({filter:"grayscale("+l/4+"%)"})})});

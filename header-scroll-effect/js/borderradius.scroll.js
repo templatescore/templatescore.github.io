@@ -1,0 +1,1 @@
+"use strict";$(function(){$(window).scroll(function(){var r=$(this).scrollTop();$("#i-parallax").css({"border-radius":0+r/10+"%"})})});

@@ -1,0 +1,1 @@
+"use strict";$(function(){$(window).scroll(function(){var o=$(this).scrollTop();$("#i-parallax").css({filter:"drop-shadow(0 0 "+o/10+"px #000)"})})});
